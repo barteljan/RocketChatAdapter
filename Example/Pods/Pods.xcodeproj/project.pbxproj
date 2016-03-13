@@ -59,6 +59,8 @@
 		9A057EF21C94A686001F57F9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A057EF11C94A686001F57F9 /* Message.swift */; };
 		9A057EF41C94AAA1001F57F9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A057EF31C94AAA1001F57F9 /* User.swift */; };
 		9A057EF61C94B22D001F57F9 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A057EF51C94B22D001F57F9 /* Visitor.swift */; };
+		9A057EF81C96075C001F57F9 /* SendMessageCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A057EF71C96075C001F57F9 /* SendMessageCommand.swift */; };
+		9A057EFA1C96084D001F57F9 /* SendMessageCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A057EF91C96084D001F57F9 /* SendMessageCommandHandler.swift */; };
 		9B44896384456C250ECC8EB7A87993CE /* LogonCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C301438A3C3611F8D4AD46883F5843A /* LogonCommandHandler.swift */; };
 		9BD5053117983FF93EACEA7376E0D727 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48C62A2053B66E81C696BD02405535C /* SocketRocket.framework */; };
 		9C63EE772F648EFA652C8CF85245DFF9 /* VISPERCommandBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E62A32442DE06A48B79370A6EB0EDA /* VISPERCommandBus.swift */; };
@@ -293,6 +295,8 @@
 		9A057EF11C94A686001F57F9 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		9A057EF31C94AAA1001F57F9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9A057EF51C94B22D001F57F9 /* Visitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		9A057EF71C96075C001F57F9 /* SendMessageCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageCommand.swift; sourceTree = "<group>"; };
+		9A057EF91C96084D001F57F9 /* SendMessageCommandHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageCommandHandler.swift; sourceTree = "<group>"; };
 		9B1BE488D76EC964B7764465BEBF13A1 /* IVISPERCommandBus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IVISPERCommandBus.swift; path = Pod/Classes/CommandBus/IVISPERCommandBus.swift; sourceTree = "<group>"; };
 		9D334CF269A6C7C18CAE1DCA45F6B23C /* Pods-RocketChatAdapter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RocketChatAdapter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A0DECC3EC6D872E58B552CB1D32D201D /* CommandBusProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandBusProtocol.swift; path = Pod/Classes/CommandBus/CommandBusProtocol.swift; sourceTree = "<group>"; };
@@ -484,6 +488,7 @@
 				9A057EE51C948A89001F57F9 /* JoinChannelCommandHandler.swift */,
 				9A057EE91C949205001F57F9 /* LeaveChannelCommandHandler.swift */,
 				9A057EED1C949BE1001F57F9 /* GetChannelHistoryCommandHandler.swift */,
+				9A057EF91C96084D001F57F9 /* SendMessageCommandHandler.swift */,
 			);
 			path = CommandHandler;
 			sourceTree = "<group>";
@@ -716,6 +721,7 @@
 				9A057EE21C9488EC001F57F9 /* JoinChannelCommand.swift */,
 				9A057EE71C9491A6001F57F9 /* LeaveChannelCommand.swift */,
 				9A057EEB1C949B1E001F57F9 /* GetChannelHistoryCommand.swift */,
+				9A057EF71C96075C001F57F9 /* SendMessageCommand.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -1064,6 +1070,8 @@
 				9A057ED11C9472F0001F57F9 /* Channel.swift in Sources */,
 				B24A75308950B4F2EA8EC11D83D7F0FF /* AuthorizationResult.swift in Sources */,
 				9A057EEC1C949B1E001F57F9 /* GetChannelHistoryCommand.swift in Sources */,
+				9A057EFA1C96084D001F57F9 /* SendMessageCommandHandler.swift in Sources */,
+				9A057EF81C96075C001F57F9 /* SendMessageCommand.swift in Sources */,
 				9A057EEA1C949205001F57F9 /* LeaveChannelCommandHandler.swift in Sources */,
 				9A057EEE1C949BE1001F57F9 /* GetChannelHistoryCommandHandler.swift in Sources */,
 				9A057EE81C9491A6001F57F9 /* LeaveChannelCommand.swift in Sources */,

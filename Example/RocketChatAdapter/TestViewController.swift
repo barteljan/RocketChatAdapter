@@ -26,6 +26,7 @@ class TestViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var channelField: UITextField!
+    @IBOutlet weak var messageField: UITextField!
     
     @IBOutlet weak var tokenLabel: UILabel!
     @IBOutlet weak var userIdLabel: UILabel!
@@ -338,5 +339,39 @@ class TestViewController: UIViewController,UITextFieldDelegate {
                 
             })
         }
+    }
+    
+    @IBAction func sendMessages(sender: AnyObject) {
+        
+        if(checkConnection()){
+            
+            let channel = self.channelField.text
+            
+            if channel == nil{
+                let alert = UIAlertView(title: "Error", message: "Please enter a channel name!", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
+                alert.show()
+                return
+            }
+            
+            self.adapter?.getChannelId(channel!, completion: { (roomId, error) -> Void in
+                print("Die Channel-Id ist:\(roomId)")
+                
+                if(roomId == nil){
+                    print("Der Channel \(channel) existiert nicht")
+                    return
+                }
+                
+                let message = self.messageField.text
+                
+                if(message != nil){
+                    self.adapter?.sendMessage(roomId!, message: message!)
+                }
+            })
+            
+        }
+
+        
+        
+        
     }
 }

@@ -168,5 +168,21 @@ public struct RocketChatAdapter : RocketChatAdapterProtocol{
         }
     }
     
+    
+    public func sendMessage(channelId : String,message: String){
+        
+        let command = SendMessageCommand(channelId: channelId, message: message)
+        
+        if(!self.commandBus.isResponsible(command)){
+            self.commandBus.addHandler(SendMessageCommandHandler((meteorClient : self.meteorClient)))
+        }
+        
+        
+        try! self.commandBus.process(command) { (result: MessageHistoryResult?, error: ErrorType?) -> Void in
+            //completion?(result: result,error: error)
+        }
+    
+    }
+
 
 }
