@@ -1,0 +1,6 @@
+framework module VISPER_CommandBus {
+  umbrella header "VISPER-CommandBus-umbrella.h"
+
+  export *
+  module * { export * }
+}

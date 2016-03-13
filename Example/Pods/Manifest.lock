@@ -1,0 +1,29 @@
+PODS:
+  - M13OrderedDictionary (1.1.0)
+  - ObjectiveDDP (0.2.0):
+    - M13OrderedDictionary
+    - SocketRocket (= 0.4.1)
+  - RocketChatAdapter (0.1.0):
+    - ObjectiveDDP
+    - VISPER-CommandBus (~> 0.1.5)
+  - SocketRocket (0.4.1)
+  - VISPER-CommandBus (0.1.5)
+
+DEPENDENCIES:
+  - ObjectiveDDP (from `../../ObjectiveDDP`)
+  - RocketChatAdapter (from `../`)
+
+EXTERNAL SOURCES:
+  ObjectiveDDP:
+    :path: ../../ObjectiveDDP
+  RocketChatAdapter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  M13OrderedDictionary: 6e157fe9c82aa6b3cd7198f5c5c30c7a6834c4a6
+  ObjectiveDDP: c2225f6896d671977b7046afc0530967cd141f90
+  RocketChatAdapter: c107e86586eb03db7aad4c35f4b4d19a588d8b8e
+  SocketRocket: ee0b5c34182d37bb4f1f8d628bbe737718126daa
+  VISPER-CommandBus: fd1af3f9a43a14c79654424472236d4853fb1a0b
+
+COCOAPODS: 0.39.0

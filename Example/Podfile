@@ -1,12 +1,21 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
+pod 'ObjectiveDDP',path:'../../ObjectiveDDP'
+
+#:git => 'https://github.com/boundsj/ObjectiveDDP.git', :branch => 'master'
+
 target 'RocketChatAdapter_Example', :exclusive => true do
   pod 'RocketChatAdapter', :path => '../'
 end
 
 target 'RocketChatAdapter_Tests', :exclusive => true do
   pod 'RocketChatAdapter', :path => '../'
+end
 
-  
+
+post_install do |installer|
+    installer.pods_project.build_configuration_list.build_configurations.each do |configuration|
+        configuration.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+    end
 end
