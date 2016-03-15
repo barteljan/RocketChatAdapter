@@ -13,6 +13,7 @@ To include it in your own project take a look at the AdapterProtocol
 
 <pre>
 public protocol RocketChatAdapterProtocol{
+
     /**
     * Logon
     **/
@@ -46,8 +47,8 @@ public protocol RocketChatAdapterProtocol{
     /**
     * Send a message
     **/
-    func sendMessage(channelId : String,message: String)
-}
+    func sendMessage(channelId : String,message: String, completion: ((result: Message?, error: ErrorType?) -> Void)?)
+    }
 </pre>
 
 
