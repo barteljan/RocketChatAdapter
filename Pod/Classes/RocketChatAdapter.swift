@@ -40,8 +40,7 @@ public struct RocketChatAdapter : RocketChatAdapterProtocol{
         }
     }
     
-    public func connect(endpoint:String,callback:(() -> ())?){
-        Meteor.client.allowSelfSignedSSL = true   
+    public func connect(endpoint:String,callback:(() -> ())?){   
         Meteor.client.logLevel = .Info
         Meteor.connect(endpoint,callback: callback)
     }
