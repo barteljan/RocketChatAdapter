@@ -1,0 +1,29 @@
+PODS:
+  - CryptoSwift (0.2.3)
+  - RocketChatAdapter (0.1.0):
+    - SwiftDDP
+    - VISPER-CommandBus (~> 0.1.5)
+  - SwiftDDP (0.2.1):
+    - CryptoSwift
+    - SwiftWebSocket
+    - XCGLogger
+  - SwiftWebSocket (2.5.0)
+  - VISPER-CommandBus (0.1.5)
+  - XCGLogger (3.2)
+
+DEPENDENCIES:
+  - RocketChatAdapter (from `../`)
+
+EXTERNAL SOURCES:
+  RocketChatAdapter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CryptoSwift: b2bf37b8e7cc6d682ef3365cb966bc5ae5174aa5
+  RocketChatAdapter: b6602859370e85d0e275e292f2d40c5f3afb8dca
+  SwiftDDP: da4fccd2b816e164d7be364f7c1ac92591f9c284
+  SwiftWebSocket: 168cbde980dc3b5bac925a3d8186f82b3e87768e
+  VISPER-CommandBus: fd1af3f9a43a14c79654424472236d4853fb1a0b
+  XCGLogger: da1f341f4bb8979db6e1df64232f04d9698402d4
+
+COCOAPODS: 0.39.0

@@ -9,6 +9,48 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+To include it in your own project take a look at the AdapterProtocol
+
+<pre>
+public protocol RocketChatAdapterProtocol{
+    /**
+    * Logon
+    **/
+    func logon(userNameOrEmail: String, password: String, completion:((result: AuthorizationResultProtocol?,error:ErrorType?)->Void)?)
+
+    /**
+    * Get all public channels
+    **/
+    func channelList(completion:((result: [ChannelProtocol]?,error: ErrorType?)->Void)?)
+
+    /**
+    * Get a channels id by its name
+    */
+    func getChannelId(name:String, completion:((roomId:String?, error: ErrorType?)->Void)?)
+
+    /**
+    * Join a channel
+    **/
+    func joinChannel(channelId: String,completion:((error:ErrorType?)->Void)?)
+
+    /**
+    * Leave a channel
+    **/
+    func leaveChannel(channelId: String,completion:((error:ErrorType?)->Void)?)
+
+    /**
+    * Get messages from channel
+    **/
+    func channelMessages(channelId : String, numberOfMessages:Int, start: NSDate?, end: NSDate?, completion: ((result: MessageHistoryResultProtocol?, error: ErrorType?)->Void)?)
+
+    /**
+    * Send a message
+    **/
+    func sendMessage(channelId : String,message: String)
+}
+</pre>
+
+
 ## Requirements
 
 ## Installation
