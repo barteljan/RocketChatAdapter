@@ -8,6 +8,13 @@
 
 import Foundation
 
+public enum UserStatus : String{
+    case Online  = "online"
+    case Away    = "away"
+    case Busy    = "busy"
+    case Offline = "offline"
+}
+
 public protocol UserProtocol{
     var userId   : String {get}
     var username : String {get}

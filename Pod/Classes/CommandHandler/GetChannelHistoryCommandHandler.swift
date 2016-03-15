@@ -51,6 +51,7 @@ public class GetChannelHistoryCommandHandler: CommandHandlerProtocol {
             "$date": startTimestamp
             ])
         
+        
         Meteor.call("loadHistory", params: [myCommand.channelId,endFormData,myCommand.numberOfMessages,startFormData]) { (result, error) -> () in
             
             if error != nil {
@@ -58,22 +59,23 @@ public class GetChannelHistoryCommandHandler: CommandHandlerProtocol {
                 return
             }
             
-            if let myResult = result{
+            if let myResult = result as! [String : AnyObject]?{
                 
                 let respMessages : [[String : AnyObject]] = myResult["messages"] as! [[String : AnyObject]]
                 
                 let unreadNotLoaded = myResult["unreadNotLoaded"] as! Int
                 
-                var firstUnread : Int?
-                firstUnread = myResult["firstUnread"] as! Int?
+                var firstUnread : Message?
+                let unreadDict = myResult["firstUnread"] as! [String: AnyObject]?
                 
-                if(firstUnread == nil){
-                    firstUnread = 0
+                
+                if(unreadDict != nil){
+                    firstUnread = self.parser.parseMessage(unreadDict!).message
                 }
                 
                 let parsedMessages = self.parser.parseMessages(respMessages)
                 
-                let messageResult = MessageHistoryResult(unreadNotLoaded:unreadNotLoaded,firstUnread:firstUnread!,messages: parsedMessages.messages!)
+                let messageResult = MessageHistoryResult(unreadNotLoaded:unreadNotLoaded,firstUnread:firstUnread,messages: parsedMessages.messages!)
                 
                 completion?(result: (messageResult as! T), error: nil)
                 return

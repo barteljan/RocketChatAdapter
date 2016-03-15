@@ -32,6 +32,8 @@ public struct MessageParser : MessageParserProtocol{
     
     public func parseMessage(messageDict:[String : AnyObject]) -> (message:Message!,error:ErrorType?){
         
+        print(messageDict)
+        
         //parse base fields
         let messageId = messageDict["_id"] as! String
         let msg       = messageDict["msg"] as! String
@@ -74,7 +76,31 @@ public struct MessageParser : MessageParserProtocol{
             }
         }
         
+        //check edited state
+        let editedAtTime = messageDict["editedAt"]?["$date"] as? Double?
+        var editedAt : Double?
         
+        if(editedAtTime != nil){
+            editedAt = editedAtTime!!/1000.0
+        }
+        
+        var editedBy : UserProtocol?
+        let editedByDict = messageDict["editedBy?"] as? [String:AnyObject]
+        if(editedByDict != nil){
+            editedBy = self.parseUser(editedByDict!)
+        }
+        
+        //check mentioned users
+        let mentionedUsersArray = messageDict["mentions"] as? [[String:AnyObject]]
+        var mentionedUsers : [UserProtocol]?
+        if(mentionedUsersArray != nil){
+            mentionedUsers = [UserProtocol]()
+            for userDict in mentionedUsersArray!{
+                mentionedUsers?.append(self.parseUser(userDict))
+            }
+        }
+        
+        let attachments = messageDict["attachments"]
         let message = Message(messageId: messageId,
             message: msg,
             channelId: channelId,
@@ -83,7 +109,11 @@ public struct MessageParser : MessageParserProtocol{
             type: type,
             groupable: groupable,
             urls: urls,
-            parsedUrls:parsedUrls)
+            parsedUrls:parsedUrls,
+            editedAt: editedAt,
+            editedBy: editedBy,
+            mentionedUsers: mentionedUsers,
+            attachments: attachments as! [[String:AnyObject]]?)
         
         return (message: message, error: nil)
     }

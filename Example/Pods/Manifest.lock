@@ -1,6 +1,6 @@
 PODS:
   - CryptoSwift (0.2.3)
-  - RocketChatAdapter (0.1.0):
+  - RocketChatAdapter (0.1.2):
     - SwiftDDP
     - VISPER-CommandBus (~> 0.1.5)
   - SwiftDDP (0.2.1):
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CryptoSwift: b2bf37b8e7cc6d682ef3365cb966bc5ae5174aa5
-  RocketChatAdapter: b6602859370e85d0e275e292f2d40c5f3afb8dca
+  RocketChatAdapter: 6abae93518619b4cc17d18479a4151473b1cbbcb
   SwiftDDP: da4fccd2b816e164d7be364f7c1ac92591f9c284
   SwiftWebSocket: 168cbde980dc3b5bac925a3d8186f82b3e87768e
   VISPER-CommandBus: fd1af3f9a43a14c79654424472236d4853fb1a0b

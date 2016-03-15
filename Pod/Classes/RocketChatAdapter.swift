@@ -29,7 +29,6 @@ public struct RocketChatAdapter : RocketChatAdapterProtocol{
     }
     
     
-    
     public init(endPoint:String,commandBus: CommandBusProtocol?){
         self.endPoint   = endPoint
         
@@ -40,16 +39,36 @@ public struct RocketChatAdapter : RocketChatAdapterProtocol{
         }
     }
     
+    /**
+     * Connect to server
+     **/
+    
     public func connect(endpoint:String,callback:(() -> ())?){   
         Meteor.client.logLevel = .Info
         Meteor.connect(endpoint,callback: callback)
+    }
+    
+    /**
+     * Register user
+     **/
+    public func register(email: String,name: String,password: String,completion: ((userId: String?, error: ErrorType?) -> Void)?){
+        
+        let command = RegisterCommand(email: email, name: name, password: password)
+        
+        if(!self.commandBus.isResponsible(command)){
+            self.commandBus.addHandler(RegisterCommandHandler())
+        }
+        
+        try! self.commandBus.process(command) { (result: String?, error: ErrorType?) -> Void in
+            completion?(userId: result,error: error)
+        }
     }
     
     
     /**
     * Logon
     **/
-    public func logon(userNameOrEmail: String, password: String, completion:((result: AuthorizationResultProtocol?,error:ErrorType?)->Void)?){
+    public func login(userNameOrEmail: String, password: String, completion:((result: AuthorizationResultProtocol?,error:ErrorType?)->Void)?){
         
         let command = LogonCommand(userNameOrEmail:userNameOrEmail,password: password)
         
@@ -132,7 +151,9 @@ public struct RocketChatAdapter : RocketChatAdapterProtocol{
     
     }
     
-    
+    /**
+     * Get messages of a channel
+     **/
     public func channelMessages(channelId : String, numberOfMessages:Int, start: NSDate?, end: NSDate?, completion: ((result: MessageHistoryResultProtocol?, error: ErrorType?)->Void)?){
         
         
@@ -149,6 +170,9 @@ public struct RocketChatAdapter : RocketChatAdapterProtocol{
     }
     
     
+    /**
+      * Send a message in a channel
+    **/
     public func sendMessage(channelId : String,message: String, completion: ((result: Message?, error: ErrorType?) -> Void)?){
         
         let command = SendMessageCommand(channelId: channelId, message: message)
@@ -163,6 +187,24 @@ public struct RocketChatAdapter : RocketChatAdapterProtocol{
         }
     
     }
-
+    
+    
+    /**
+      * Set user status
+    **/
+    public func setUserStatus(userStatus: UserStatus,completion: ((error:ErrorType?)->Void)?){
+    
+        let command = SetUserStatusCommand(userStatus: userStatus)
+        
+        if(!self.commandBus.isResponsible(command)){
+            self.commandBus.addHandler(UserStatusCommandHandler())
+        }
+        
+        
+        try! self.commandBus.process(command) { (result: Any?, error: ErrorType?) -> Void in
+            completion?(error: error)
+        }
+    
+    }
 
 }

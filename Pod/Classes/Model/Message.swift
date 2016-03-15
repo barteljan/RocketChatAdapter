@@ -40,6 +40,9 @@ public protocol MessageProtocol : Hashable{
     var groupable : Bool                {get}
     var urls      : [String]?           {get}
     var parsedUrls: [[String:NSObject]]?{get}
+    var editedAt  : Double?             {get}
+    var editedBy  : UserProtocol?       {get}
+    var attachments : [[String:AnyObject]]? {get}
     /*
     var expireAt  : Double?          {get}
     var mentionedUsers : [String]?   {get}
@@ -61,6 +64,10 @@ public struct Message: MessageProtocol{
     public let groupable : Bool
     public let urls      : [String]?
     public let parsedUrls: [[String:NSObject]]?
+    public let editedAt  : Double?
+    public let editedBy  : UserProtocol?  
+    public let mentionedUsers : [UserProtocol]?
+    public let attachments : [[String:AnyObject]]?
     
     public var hashValue : Int{
         get{
@@ -71,7 +78,7 @@ public struct Message: MessageProtocol{
     
     /*
     public let expireAt  : Double?
-    public let mentionedUsers : [String]?
+
     public let visitor   : VisitorProtocol?
     public let pinned    : Bool
     public let pinnedAt  : Double?

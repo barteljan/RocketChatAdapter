@@ -15,9 +15,19 @@ To include it in your own project take a look at the AdapterProtocol
 public protocol RocketChatAdapterProtocol{
 
     /**
+    * Connect to server
+    **/
+    func connect(endpoint:String,callback:(() -> ())?)
+
+    /**
+    * Register user
+    **/
+    func register(email: String,name: String,password: String,completion: ((userId: String?, error: ErrorType?) -> Void)?)
+
+    /**
     * Logon
     **/
-    func logon(userNameOrEmail: String, password: String, completion:((result: AuthorizationResultProtocol?,error:ErrorType?)->Void)?)
+    func login(userNameOrEmail: String, password: String, completion:((result: AuthorizationResultProtocol?,error:ErrorType?)->Void)?)
 
     /**
     * Get all public channels
@@ -48,7 +58,12 @@ public protocol RocketChatAdapterProtocol{
     * Send a message
     **/
     func sendMessage(channelId : String,message: String, completion: ((result: Message?, error: ErrorType?) -> Void)?)
-    }
+
+    /**
+    * Set user status
+    **/
+func setUserStatus(userStatus: UserStatus,completion: ((error:ErrorType?)->Void)?)
+}
 </pre>
 
 

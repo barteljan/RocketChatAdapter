@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "RocketChatAdapter"
-    s.version          = "0.1.2"
+    s.version          = "0.1.3"
     s.summary          = "Adapter to connect your app with a rocket chat"
 
     s.description      = <<-DESC

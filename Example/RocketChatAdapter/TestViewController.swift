@@ -16,12 +16,13 @@ enum FieldKeys : String{
     case LoginToken = "LoginToken"
     case UserId = "UserId"
     case Channel = "Channel"
+    case EMail   = "Email"
 
 }
 
 
 class TestViewController: UIViewController,UITextFieldDelegate {
-
+    @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var serverField: UITextField!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -70,6 +71,7 @@ class TestViewController: UIViewController,UITextFieldDelegate {
         self.usernameField.delegate = self
         self.passwordField.delegate = self
         self.channelField.delegate  = self
+        self.emailField.delegate    = self
         
         let defaults = NSUserDefaults.standardUserDefaults()
         
@@ -88,6 +90,11 @@ class TestViewController: UIViewController,UITextFieldDelegate {
         if(defaults.objectForKey(FieldKeys.Channel.rawValue) != nil){
             self.channelField.text = defaults.objectForKey(FieldKeys.Channel.rawValue) as! String?
         }
+        
+        if(defaults.objectForKey(FieldKeys.EMail.rawValue) != nil){
+            self.emailField.text = defaults.objectForKey(FieldKeys.EMail.rawValue) as! String?
+        }
+        
         
         print("Token:\(self.loginToken)")
         print("ClientId:\(self.userId)")
@@ -136,12 +143,16 @@ class TestViewController: UIViewController,UITextFieldDelegate {
                 return
             }
             
-            self.adapter?.logon(self.usernameField.text!,
+            self.adapter?.login(self.usernameField.text!,
                 password: self.passwordField.text!, completion: { (result, error) -> Void in
                     if(error == nil && result != nil){
                         self.loginToken = result!.sessionToken
                         self.userId = result!.userId
                         print("sessionToken: \(result!.sessionToken) userId:\(result!.userId)")
+                        self.adapter?.setUserStatus(UserStatus.Busy, completion: { (error) -> Void in
+                            print(result)
+                            print("set status to busy")
+                        })
                     }else{
                         print("error:\(String(error))")
                     }
@@ -181,6 +192,9 @@ class TestViewController: UIViewController,UITextFieldDelegate {
             break
         case self.channelField:
             defaults.setObject(value, forKey: FieldKeys.Channel.rawValue)
+            break
+        case self.emailField:
+            defaults.setObject(value, forKey: FieldKeys.EMail.rawValue)
             break
         default:
             break
@@ -318,7 +332,7 @@ class TestViewController: UIViewController,UITextFieldDelegate {
                     return
                 }
                 
-                self.adapter?.channelMessages(roomId!, numberOfMessages: 10, start: nil, end: nil, completion: { (result, error) -> Void in
+                self.adapter?.channelMessages(roomId!, numberOfMessages: 50, start: nil, end: nil, completion: { (result, error) -> Void in
                     
                     if(error != nil){
                         print("Error: \(String(error!))")
@@ -379,6 +393,35 @@ class TestViewController: UIViewController,UITextFieldDelegate {
 
         
         
+        
+    }
+    @IBAction func registerAction(sender: AnyObject) {
+        
+        if(!checkConnection()){
+            return
+        }
+        
+        if(self.emailField.text == nil || self.emailField.text?.characters.count == 0){
+            let alert = UIAlertView(title: "Error", message: "Please enter a valid email address", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
+            alert.show()
+            return
+        }
+        
+        if(self.usernameField.text == nil || self.usernameField.text?.characters.count == 0){
+            let alert = UIAlertView(title: "Error", message: "Please enter a valid username", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
+            alert.show()
+            return
+        }
+
+        if(self.passwordField.text == nil || self.passwordField.text?.characters.count == 0){
+            let alert = UIAlertView(title: "Error", message: "Please enter a valid username", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
+            alert.show()
+            return
+        }
+
+        self.adapter?.register(self.emailField.text!, name: self.usernameField.text!, password: self.passwordField.text!, completion: { (userId, error) -> Void in
+            print("UserId:\(userId)")
+        })
         
     }
 }
