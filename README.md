@@ -1,5 +1,7 @@
 # RocketChatAdapter
 
+An adapter to connect your app to a Rocket-Chat server.
+
 [![CI Status](http://img.shields.io/travis/Jan Bartel/RocketChatAdapter.svg?style=flat)](https://travis-ci.org/Jan Bartel/RocketChatAdapter)
 [![Version](https://img.shields.io/cocoapods/v/RocketChatAdapter.svg?style=flat)](http://cocoapods.org/pods/RocketChatAdapter)
 [![License](https://img.shields.io/cocoapods/l/RocketChatAdapter.svg?style=flat)](http://cocoapods.org/pods/RocketChatAdapter)
@@ -23,6 +25,21 @@ public protocol RocketChatAdapterProtocol{
     * Register user
     **/
     func register(email: String,name: String,password: String,completion: ((userId: String?, error: ErrorType?) -> Void)?)
+
+    /**
+    * Get a suggestion for your username
+    **/
+    func usernameSuggestion(completion:((username: String?,error:ErrorType?)->Void)?)
+
+    /**
+    * Set username
+    **/
+    func setUsername(username:String,completion:((username: String?,error:ErrorType?)->Void)?)
+
+    /**
+    * Send forgot password email
+    **/
+    func sendForgotPasswordEmail(usernameOrMail: String, completion:((result: Int?,error: ErrorType?)->Void)?)
 
     /**
     * Logon
@@ -62,7 +79,8 @@ public protocol RocketChatAdapterProtocol{
     /**
     * Set user status
     **/
-func setUserStatus(userStatus: UserStatus,completion: ((error:ErrorType?)->Void)?)
+    func setUserStatus(userStatus: UserStatus,completion: ((error:ErrorType?)->Void)?)
+
 }
 </pre>
 

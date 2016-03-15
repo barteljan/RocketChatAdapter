@@ -21,6 +21,21 @@ public protocol RocketChatAdapterProtocol{
     func register(email: String,name: String,password: String,completion: ((userId: String?, error: ErrorType?) -> Void)?)
     
     /**
+      * Get a suggestion for your username
+    **/
+    func usernameSuggestion(completion:((username: String?,error:ErrorType?)->Void)?)
+    
+    /**
+     * Set username
+     **/
+    func setUsername(username:String,completion:((username: String?,error:ErrorType?)->Void)?)
+    
+    /**
+     * Send Forgot password email
+     **/
+    func sendForgotPasswordEmail(usernameOrMail: String, completion:((result: Int?,error: ErrorType?)->Void)?)
+    
+    /**
      * Logon
      **/
     func login(userNameOrEmail: String, password: String, completion:((result: AuthorizationResultProtocol?,error:ErrorType?)->Void)?)

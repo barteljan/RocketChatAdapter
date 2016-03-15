@@ -424,4 +424,50 @@ class TestViewController: UIViewController,UITextFieldDelegate {
         })
         
     }
+   
+    @IBAction func suggestUsernameAction(sender: AnyObject) {
+        if(!checkConnection()){
+            return
+        }
+        
+        self.adapter?.usernameSuggestion({ (username, error) -> Void in
+            print("suggested username: \(username!)")
+        })
+    }
+    
+    @IBAction func setUsernameAction(sender: AnyObject) {
+        if(!checkConnection()){
+            return
+        }
+        
+        if(self.usernameField.text == nil || self.usernameField.text?.characters.count == 0){
+            let alert = UIAlertView(title: "Error", message: "Please enter a valid username", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
+            alert.show()
+            return
+        }
+        
+        self.adapter?.setUsername(self.usernameField.text!, completion: { (username, error) -> Void in
+            print(username)
+        })
+        
+        
+    }
+    
+    @IBAction func sendForgotPasswordMailAction(sender: AnyObject) {
+        
+        if(!checkConnection()){
+            return
+        }
+        
+        if(self.emailField.text == nil || self.emailField.text?.characters.count == 0){
+            let alert = UIAlertView(title: "Error", message: "Please enter a valid email", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
+            alert.show()
+            return
+        }
+        
+        self.adapter?.sendForgotPasswordEmail(self.emailField.text!, completion: { (result, error) -> Void in
+            print(result)
+        })
+
+    }
 }

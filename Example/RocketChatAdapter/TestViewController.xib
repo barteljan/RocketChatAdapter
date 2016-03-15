@@ -108,7 +108,7 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="77" id="WvV-H9-YEK"/>
                     </constraints>
-                    <state key="normal" title="Senden"/>
+                    <state key="normal" title="Send"/>
                     <connections>
                         <action selector="sendMessages:" destination="-1" eventType="touchUpInside" id="kqc-Is-9fe"/>
                     </connections>
@@ -183,11 +183,32 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="183-wy-I4d">
-                    <rect key="frame" x="511" y="251" width="83" height="30"/>
-                    <state key="normal" title="Registrieren"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="183-wy-I4d">
+                    <rect key="frame" x="524" y="251" width="57" height="30"/>
+                    <state key="normal" title="Register"/>
                     <connections>
                         <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="R1v-j1-APy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sl9-zj-P1y">
+                    <rect key="frame" x="461" y="285" width="131" height="30"/>
+                    <state key="normal" title="Suggest Username"/>
+                    <connections>
+                        <action selector="suggestUsernameAction:" destination="-1" eventType="touchUpInside" id="57e-6r-aFS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oh-yK-FAi">
+                    <rect key="frame" x="494" y="323" width="98" height="30"/>
+                    <state key="normal" title="Set Username"/>
+                    <connections>
+                        <action selector="setUsernameAction:" destination="-1" eventType="touchUpInside" id="xsv-tH-j5L"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbv-6s-OmI">
+                    <rect key="frame" x="308" y="89" width="186" height="30"/>
+                    <state key="normal" title="Send Forgot Password Mail"/>
+                    <connections>
+                        <action selector="sendForgotPasswordMailAction:" destination="-1" eventType="touchUpInside" id="Hsd-BX-c0W"/>
                     </connections>
                 </button>
             </subviews>
@@ -195,6 +216,7 @@
             <constraints>
                 <constraint firstItem="XTl-kA-BIR" firstAttribute="top" secondItem="bM0-bh-1Tq" secondAttribute="bottom" constant="8" id="1Ew-cm-j9a"/>
                 <constraint firstItem="sOG-SH-MR8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="38u-mV-j2t"/>
+                <constraint firstAttribute="trailing" secondItem="2oh-yK-FAi" secondAttribute="trailing" constant="8" id="3DH-YY-1tg"/>
                 <constraint firstItem="7ml-Su-why" firstAttribute="top" secondItem="c1S-KM-ryH" secondAttribute="bottom" constant="8" id="4UY-II-2nF"/>
                 <constraint firstItem="mVG-5s-Cab" firstAttribute="top" secondItem="sOG-SH-MR8" secondAttribute="bottom" constant="17" id="693-WE-YcU"/>
                 <constraint firstItem="jdW-0t-Nit" firstAttribute="top" secondItem="4iX-In-vCe" secondAttribute="bottom" constant="-1" id="87a-9F-QDe"/>
@@ -205,11 +227,14 @@
                 <constraint firstItem="pYx-qv-mFe" firstAttribute="top" secondItem="yav-Lj-MYo" secondAttribute="bottom" constant="20" id="H0D-35-uYx"/>
                 <constraint firstItem="hou-XM-OA9" firstAttribute="top" secondItem="ZeA-SF-Ian" secondAttribute="bottom" constant="19" id="HZQ-Ac-muJ"/>
                 <constraint firstItem="w3K-dS-JIZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="OOU-sk-gxS"/>
+                <constraint firstItem="sl9-zj-P1y" firstAttribute="top" secondItem="183-wy-I4d" secondAttribute="bottom" constant="4" id="Pos-X2-rrI"/>
                 <constraint firstAttribute="trailing" secondItem="1b0-1u-Nsi" secondAttribute="trailing" constant="18" id="QhZ-IW-qyJ"/>
                 <constraint firstAttribute="trailing" secondItem="4iX-In-vCe" secondAttribute="trailing" constant="4" id="RqS-Vf-u3w"/>
                 <constraint firstAttribute="trailing" secondItem="183-wy-I4d" secondAttribute="trailing" constant="6" id="SKI-kQ-xmn"/>
                 <constraint firstAttribute="trailing" secondItem="Ek9-QR-MQq" secondAttribute="trailing" constant="2" id="TnE-gR-9qp"/>
                 <constraint firstItem="c1S-KM-ryH" firstAttribute="leading" secondItem="mVG-5s-Cab" secondAttribute="trailing" constant="13" id="V7u-01-ZUL"/>
+                <constraint firstItem="2oh-yK-FAi" firstAttribute="top" secondItem="sl9-zj-P1y" secondAttribute="bottom" constant="8" id="Vh1-Ue-anF"/>
+                <constraint firstAttribute="trailing" secondItem="sl9-zj-P1y" secondAttribute="trailing" constant="8" id="WPc-vA-Aa4"/>
                 <constraint firstItem="Itr-d7-6dM" firstAttribute="leading" secondItem="w3K-dS-JIZ" secondAttribute="trailing" constant="37" id="WSQ-5E-Mbq"/>
                 <constraint firstItem="Snz-JN-hRD" firstAttribute="leading" secondItem="hou-XM-OA9" secondAttribute="trailing" constant="18" id="WVa-cn-vCj"/>
                 <constraint firstItem="hou-XM-OA9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="WrG-gy-xMg"/>
@@ -219,6 +244,7 @@
                 <constraint firstItem="jDd-3q-f5l" firstAttribute="top" secondItem="w3K-dS-JIZ" secondAttribute="bottom" constant="20" id="YPd-6q-3bG"/>
                 <constraint firstItem="bM0-bh-1Tq" firstAttribute="top" secondItem="Itr-d7-6dM" secondAttribute="bottom" constant="11" id="YiL-nL-IEm"/>
                 <constraint firstItem="yav-Lj-MYo" firstAttribute="leading" secondItem="Itr-d7-6dM" secondAttribute="trailing" constant="36" id="ad6-Pa-ibS"/>
+                <constraint firstItem="rIM-Ui-uha" firstAttribute="leading" secondItem="fbv-6s-OmI" secondAttribute="trailing" constant="14" id="bQu-Sm-Psj"/>
                 <constraint firstItem="4iX-In-vCe" firstAttribute="top" secondItem="Ek9-QR-MQq" secondAttribute="bottom" constant="2" id="dUM-6i-3UQ"/>
                 <constraint firstItem="1b0-1u-Nsi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="jVq-O4-xPu"/>
                 <constraint firstItem="Ek9-QR-MQq" firstAttribute="top" secondItem="8M4-mY-6Bd" secondAttribute="bottom" constant="1" id="lSI-tm-CSg"/>
@@ -234,6 +260,7 @@
                 <constraint firstItem="bM0-bh-1Tq" firstAttribute="leading" secondItem="jDd-3q-f5l" secondAttribute="trailing" constant="46" id="uuD-KS-k8Z"/>
                 <constraint firstItem="7ml-Su-why" firstAttribute="leading" secondItem="ZeA-SF-Ian" secondAttribute="trailing" constant="24" id="vah-lU-UQC"/>
                 <constraint firstItem="rIM-Ui-uha" firstAttribute="top" secondItem="4FL-46-MKG" secondAttribute="bottom" constant="8" id="wCD-8b-8As"/>
+                <constraint firstItem="fbv-6s-OmI" firstAttribute="top" secondItem="pYx-qv-mFe" secondAttribute="bottom" constant="18" id="wSv-HA-2Jy"/>
                 <constraint firstItem="183-wy-I4d" firstAttribute="top" secondItem="jdW-0t-Nit" secondAttribute="bottom" constant="2" id="wyi-e5-Mxa"/>
                 <constraint firstItem="XTl-kA-BIR" firstAttribute="leading" secondItem="sOG-SH-MR8" secondAttribute="trailing" constant="8" id="x10-Lz-lQB"/>
                 <constraint firstItem="4FL-46-MKG" firstAttribute="top" secondItem="1b0-1u-Nsi" secondAttribute="bottom" constant="3" id="zf8-6S-hoP"/>

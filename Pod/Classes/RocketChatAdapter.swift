@@ -64,6 +64,57 @@ public struct RocketChatAdapter : RocketChatAdapterProtocol{
         }
     }
     
+    /**
+     * Get username suggestion
+     **/
+    public func usernameSuggestion(completion:((username: String?,error:ErrorType?)->Void)?){
+        let command = GetUserNameSuggestionCommand()
+        
+        if(!self.commandBus.isResponsible(command)){
+            self.commandBus.addHandler(GetUserNameSuggestionCommandHandler())
+        }
+        
+        try! self.commandBus.process(command) { (result: String?, error: ErrorType?) -> Void in
+            completion?(username: result,error: error)
+        }
+
+    }
+    
+    
+    /**
+     * Set username
+     **/
+    public func setUsername(username:String,completion:((username: String?,error:ErrorType?)->Void)?){
+        let command = SetUserNameCommand(username:username)
+        
+        if(!self.commandBus.isResponsible(command)){
+            self.commandBus.addHandler(SetUsernameCommandHandler())
+        }
+        
+        try! self.commandBus.process(command) { (result: String?, error: ErrorType?) -> Void in
+            completion?(username: result,error: error)
+        }
+        
+    }
+
+    
+    /**
+     * Send Forgot password email
+     **/
+    public func sendForgotPasswordEmail(usernameOrMail: String, completion:((result: Int?,error: ErrorType?)->Void)?){
+    
+        let command = SendForgotPasswordEMailCommand(userNameOrMail: usernameOrMail)
+        
+        if(!self.commandBus.isResponsible(command)){
+            self.commandBus.addHandler(SendForgotPasswordEMailCommandHandler())
+        }
+        
+        try! self.commandBus.process(command) { (result: Int?, error: ErrorType?) -> Void in
+            completion?(result: result,error: error)
+        }
+
+    }
+    
     
     /**
     * Logon

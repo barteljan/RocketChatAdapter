@@ -7,76 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0182BC01305615CF8F286716103D67C8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CC7BFD322147AD3F2121FE3F1E866 /* Message.swift */; };
+		00E464DC745E346F4D0A9C101EED51AB /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24638471AF9CECD6A81B902CC9B701D7 /* Visitor.swift */; };
+		01988CF929EA05D3B255AFE812D102CB /* JoinChannelCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE27316528D019131DA28E59997735D7 /* JoinChannelCommand.swift */; };
+		0262267F2FDD18918911896F7165978F /* GetChannelsCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A562F47D5F0132EF33BC2BD35A9AF1F /* GetChannelsCommandHandler.swift */; };
 		02A53F5919702A42909664829D0F8A28 /* VISPER_CommandBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6D03C98A2D700B8D3E7A1112F9A2D3 /* VISPER_CommandBus.framework */; };
 		0461126CA883DFFE6F82A7AAF32F0EDC /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEC4EE7CD84879205E196E8243D55A9 /* XCGLogger.swift */; };
+		0736004B1E791235E5C53376A40E2E11 /* GetChannelsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DEA47CAD4B9296B7D8578BDF2A250E /* GetChannelsCommand.swift */; };
 		0871DE54335AE65574E6A43BB9A17BA5 /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A05034C9483C26C81F250FD757B8BA /* NSData+Extension.swift */; };
-		08DCEF9EBC955586349BF33324DC0815 /* RegisterCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C836FFDC705BE879C7E6DEAEA7CA9 /* RegisterCommandHandler.swift */; };
+		0972E963897B35ED79C36FC97F5A816E /* LeaveChannelCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F470D218F47A3B404CC04368EAFB5E /* LeaveChannelCommand.swift */; };
 		0A3653EA3BE1D67896ED50AF925E7CAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E60E5519EE28BD5999DE57DD41D38 /* Foundation.framework */; };
 		0A996B90DE38D11344AE64FC806714FE /* EJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47579EB6145085CDCEC958C42B9FA6C /* EJSON.swift */; };
+		0AB145EBEAFECE4438FD8BCB04FFEF8F /* SetUsernameCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67EAA6F98B25458CBBEAEB33CBA003D /* SetUsernameCommandHandler.swift */; };
 		0C12C8E35C52F8AF6C006F1A332E7024 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FA57B2E03665815A1E9EF5B0D8DDDE /* Hash.swift */; };
 		0CB45B66D0769FACF3825B6D6DD834C9 /* CompatibleCommandBusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F9EDDDB11ADE00CDA101FE05B75BB6 /* CompatibleCommandBusProtocol.swift */; };
 		0CD79D249D6EA5AC6A9E5152F79D25F8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14E8831FBD76BD6032B5CCF19C911EA /* Utils.swift */; };
-		0D147EF46F132DC8EA8FCC514D66B1DC /* JoinChannelCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825FD5B2F4FF6E1AF43F5C00EF511A29 /* JoinChannelCommand.swift */; };
-		0FB6F73CD9DBFB6D55489FF416E1A7D2 /* MessageParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819A816603666E9303F85893F5D20FC /* MessageParserProtocol.swift */; };
+		0D688D9FE782192FA92779A2FE0D8CE8 /* SendForgotPasswordEMailCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB3178D0554B88B7E2DA0AECB7A9E9 /* SendForgotPasswordEMailCommand.swift */; };
 		107A7625E5DAF8D326DBA881E74188CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E60E5519EE28BD5999DE57DD41D38 /* Foundation.framework */; };
 		1083A65D440491C3DC1B795A1F227A30 /* CryptoSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5AA875691E8B9A7A3763481370EF1D3 /* CryptoSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12F2AAB1C7FBAC2B36AD30443C22C222 /* JoinChannelCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB2AFBE8455EE318D0BFCAF0B8B96B /* JoinChannelCommandHandler.swift */; };
+		12FFB91A42A60508E45AE491A4C4BFDA /* MessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA994E0A35E8EF4D78968CDE221CEDAA /* MessageParser.swift */; };
 		1344F36CB5DD44E5C39F9C55ADFA5652 /* ArrayUInt8+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D57B8DA62E66D670AA93E4C8FCBEF64 /* ArrayUInt8+Foundation.swift */; };
 		1905E90F99EF19D3503E4977A9712152 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4460B64E90013375F6CD1DE9364D22C /* String+Extension.swift */; };
-		1DB95ADCB0E13AD2017EA06B773F5CAB /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B5140BCDF7037F9D2FBF17B05CF7C6 /* Channel.swift */; };
+		1A366B2DA23B434384648E044355270E /* MessageHistoryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA07946FA6701B5C51F13C2BFEFEFA /* MessageHistoryResult.swift */; };
 		1EA73B6D21BFE5D68D8FD050F1974D29 /* CryptoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD1C8D719729BC9FBF71BEA6A372D11 /* CryptoSwift-dummy.m */; };
 		1F7F615FACAB762DCAD7887A4E785FFC /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191B761D4B96C5BA286DFCE7FB86B2C /* IntExtension.swift */; };
+		1FBC55E7A03E8D12370FC94AFCF193AB /* SendForgotPasswordEMailCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889CAC1F6D6D2CE76C9A0B9BF4CAB6B0 /* SendForgotPasswordEMailCommandHandler.swift */; };
 		1FDBF1B5698B7647CE7AA54385DD1702 /* UInt64Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3F6989C6B601B165BB966C1B9A60D /* UInt64Extension.swift */; };
-		225D38F19B7224083451382916148D80 /* GetChannelHistoryCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F1F3F4555A08285C03D0104B8A0167 /* GetChannelHistoryCommandHandler.swift */; };
-		23306786F5F3D941B2A37877A1F1F6A2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A34C1E61750D0DC7DC0BB1731CF8E6F /* User.swift */; };
 		2624B116F1BEEC2129FA1AAFC58F8948 /* SwiftDDP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EC386805F9A872AC6423B9FFE0F0B4 /* SwiftDDP-dummy.m */; };
+		27388190B75C02880F7908D75C42F8A1 /* LeaveChannelCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D890C095D18B502B36137C2710C91A1B /* LeaveChannelCommandHandler.swift */; };
 		287DB21ECB473012F54749A18F156463 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E60E5519EE28BD5999DE57DD41D38 /* Foundation.framework */; };
 		28B53734AC2FD17BA51F5F76C4C38CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E60E5519EE28BD5999DE57DD41D38 /* Foundation.framework */; };
 		295129910F87123C4F23EDCA25E40EDE /* HashProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FB23782C673673FC5FF0AECE30A75E /* HashProtocol.swift */; };
 		2A5DA7168AA682ED48E7A64EF255A632 /* DDPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F54CDE30EC29BDECB3A031AED345CF0 /* DDPMessage.swift */; };
 		2DB40F9CEADF96CE1CC6D06262C4575D /* DDPCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E8D1E247F41C92E3797116CF37A212 /* DDPCompletion.swift */; };
-		30ECA0246F7D6231038EAA9A9490BCA0 /* LogonCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9F60B892B0219425CA7B4B0474DD87 /* LogonCommandHandler.swift */; };
 		347F8446924F365A66283C65E9CB2FCE /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5733930259D437CB1904995C9A951D26 /* PKCS5.swift */; };
-		35159E1DF7D97AA27A0D3576A8BCCF13 /* RocketChatAdapter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E872B5CC13B88F43685F42FED94A3136 /* RocketChatAdapter-dummy.m */; };
 		3664702EA010C726261A5F29D8AB1394 /* CommandHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC06842DC4DAFA05643E61B8D642B6 /* CommandHandlerProtocol.swift */; };
+		36F9AFB48A9A01636916B3C6870B77B9 /* JoinChannelCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130AEF419C057A984303CD18C293F1F4 /* JoinChannelCommandHandler.swift */; };
 		384AD24D61619D55E76878A7084F8800 /* Multiplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12DA5BE76E3E75B220ADFFA6A0BA91 /* Multiplatform.swift */; };
+		3BE1130069D431957FC15C4910D8BC36 /* SetUserStatusCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67EAC966204E295A10BAD6FD98FA52 /* SetUserStatusCommand.swift */; };
 		3C65D5BAFDA0DD00530165AC56A523EB /* DDPExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70FAA73F6C6926E8FBEBE88A9021C23 /* DDPExtensions.swift */; };
 		3CB3A623C1C637E854F48D56F5E09054 /* SwiftWebSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5512773A91CC11B6CC1486509A283F2A /* SwiftWebSocket-dummy.m */; };
+		3CEF2E8EB8E735BFBD0F9C76348062E9 /* GetChannelHistoryCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7334152C021F6264F6BCBE65E767A7 /* GetChannelHistoryCommandHandler.swift */; };
+		3FB18179D23F9D4426D98A9A74B6F22D /* MessageParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049D6C1C7CD41F7AE7E17F97D48A08F /* MessageParserProtocol.swift */; };
+		45803CCF685A7FDE8673832172164119 /* GetUserNameSuggestionCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA102185111DEDF50068E6898723D210 /* GetUserNameSuggestionCommandHandler.swift */; };
 		462134480E126B1024FE7676D6615BBC /* VISPER-CommandBus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FFBE0A4F017B4F44704AB5C1BC60E97 /* VISPER-CommandBus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		480A9E21812300E08F3A26E10622C930 /* GetRoomIdCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ED7B58B79A284C529B2790526BA03D /* GetRoomIdCommandHandler.swift */; };
+		46F7B0CF1887B160CA40BDC56A9943A0 /* SetUserStatusCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EFB146A3547F09E6B10BBC0E064D99 /* SetUserStatusCommandHandler.swift */; };
 		48A53A3052DB2D8E3983D16FFE845218 /* CSArrayType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894F1EEA7183E83A447901CEE0FF407 /* CSArrayType+Extensions.swift */; };
 		48CF872611BF43E45E7F0F6FA0DEEE29 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A997B6CD386A179A92548C5B691457F /* AES.swift */; };
 		48E7D5A19AC075C2015DBBAF37D16561 /* VISPERCommandBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6220386BCBA31898CF8A5B44E8D89 /* VISPERCommandBus.swift */; };
-		4B007ACE3C2B040D6A37DA07CA085510 /* LeaveChannelCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B278583F2AB3DBBC077203C364ECFD7 /* LeaveChannelCommand.swift */; };
 		4BDE46D69C5BA151043F459B4D6F7827 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F7523A5674F8B99F6CCDC13420FA4 /* Array+Extension.swift */; };
-		4E0D192008BD90D50568980DD5F12B8A /* GetChannelsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55707485759EEFF50F721E9C455EAEB /* GetChannelsCommand.swift */; };
+		4D0FF95C5D30E7715E732035A685F0B7 /* GetRoomIdCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F48629A1A763ACB222C66DD680F8EE /* GetRoomIdCommandHandler.swift */; };
 		4F000A3F4D497693B89691F325A19283 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A45E3DC02A723F6E13CB5FDD25A36 /* Padding.swift */; };
+		518F65E141F438041F274643CC4DB92A /* SetUserNameCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F16905CD47BD4E4D0D1CBDF8EE49E9 /* SetUserNameCommand.swift */; };
 		52B54C54DDE8A93C711B879C74071535 /* ArraySliceUInt8+Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B088DA75BED8391053B00DC53E54A /* ArraySliceUInt8+Bytes.swift */; };
 		5780C729DC623FA928E1F8CA81FCEA12 /* DDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A5885CFF4DDC22E3FAC3A369296CDB /* DDPClient.swift */; };
 		594A6F551E410EC29954B949F11F6063 /* IntegerConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240AD43253F8B5AEAA562B340E5C1A47 /* IntegerConvertible.swift */; };
-		5B4BD3B0E913A07F3C7918D46199BF14 /* RegisterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F27FBCED8AE662BA2EC6C111318552 /* RegisterCommand.swift */; };
 		5B6D8AFD035C7B183B8F260357B17D7F /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A475D82F1CD74E7D5B88C207478ACE0 /* Cipher.swift */; };
 		5E6CBE4DCC2776A7C09317C24509A987 /* DDPEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB6E45CB68349BAD3B1E91AFF3E7B87 /* DDPEvents.swift */; };
 		5E7774F03945816BF6CD7DD5F5DA78BE /* CommandBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C3F32ABC3ABD9826C0425E00B56547 /* CommandBus.swift */; };
 		62F1173214E2B21CF8DDFE3DA18C079F /* XCGLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0D0CBD8A5B6BFD9611D31D8DCE5867 /* XCGLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6540ED01F339BC6D3B15AE3F9361A422 /* RocketChatAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022ADC7F4554135907304A7D31F6BB99 /* RocketChatAdapterProtocol.swift */; };
 		693CF87A872F362854D808D0B568C3A2 /* RocketChatAdapter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 179385AC52CC3CEF7BA2EBAFAEC5EB46 /* RocketChatAdapter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B29BDE91EE3ABEC9B90DA1F158108F8 /* RocketChatAdapter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E872B5CC13B88F43685F42FED94A3136 /* RocketChatAdapter-dummy.m */; };
 		6CCE17EF1573C36EC3F31BC24627E1A8 /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8D72C5C47AFAE5F6DEFA7583D75EB /* String+FoundationExtension.swift */; };
 		70843E36EBECB58F0D18FC0CC48F7234 /* Pods-RocketChatAdapter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9D3917177D6BD2777533BDF6FF99B2 /* Pods-RocketChatAdapter_Tests-dummy.m */; };
 		72BC30A7C72A1FCB498AE1228B58CA92 /* SwiftWebSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D96EE32A8BDF280C4D234DB43141C1 /* SwiftWebSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		733C25BF0F10AE49097832E2D8EFA798 /* SendMessageCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0094EECF94553631C1E34D288F888ED /* SendMessageCommand.swift */; };
+		73EB0262CB21E5423FF31FED22BEED96 /* GetChannelHistoryCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6452012BA39E6B943D0C19324ECEB6D9 /* GetChannelHistoryCommand.swift */; };
 		750564A426A5BA68678C5155A5FBADBF /* Pods-RocketChatAdapter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 819AAF4DB144ACF6E6862D62751FFF19 /* Pods-RocketChatAdapter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B4FB637A9299E5A8518F755B6944BFA /* SendMessageCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54662DE5D5A813AB8E02748BD45D2D03 /* SendMessageCommandHandler.swift */; };
+		7993D128F343308A2DD8574080C161DE /* LogonCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4313F9D403675A186D6FF20D1B0D3F /* LogonCommandHandler.swift */; };
 		7B7AF9ADDDB44F0239AC9BD1A926EF18 /* BytesSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21343CB7CEEF579188C0C1F221C6FD7 /* BytesSequence.swift */; };
 		7C756FF4E6254264B7698CB3B66BD992 /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54A327EADA98D1B178AA90C17E1543 /* Rabbit.swift */; };
 		7D2E2C5DFD95EFDBBFE9C3E0D15EE24D /* VISPER-CommandBus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A45B3AA1509C44D81B87D67E0DF5E9 /* VISPER-CommandBus-dummy.m */; };
 		8023361B02040675411904AC011D98AC /* DDPExponentialBackoff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC16DCEC6B2126AA02C4CCC503DE300 /* DDPExponentialBackoff.swift */; };
 		82788AB387AE8E50DA14BDC9C7B73395 /* CRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94DB074DD544226857737E3486852BB /* CRC.swift */; };
-		82AFED75E4A58E4D3785E88C7934885B /* AuthorizationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26E5303FF89EE5D1FD3AE6F405FE22 /* AuthorizationResult.swift */; };
 		8641297C012E636BCC0AC62F794FBDD5 /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EB87F0039832022125A91756A50CAA /* ChaCha20+Foundation.swift */; };
 		89186B3682563F26284943192250C762 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA91140A6B8EE54C5FE76D108C8040D5 /* WebSocket.swift */; };
 		8B102715E057CBDFCEDF02844CE853A6 /* CipherBlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF3C2A1034CBAA9D86CD9CFFD624EF1 /* CipherBlockMode.swift */; };
+		8C6F1BEF5FF38110DA5AAB49217FEEA5 /* LogonCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E6BE9789D73F237E4EF52B236AFC5 /* LogonCommand.swift */; };
 		9090AF80D7FA3BD74C87CF1BC5338ABA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E60E5519EE28BD5999DE57DD41D38 /* Foundation.framework */; };
-		92348C1B9EB02526B39D21D914841CB9 /* LeaveChannelCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E574F8B002149919A4D54CCB0A739205 /* LeaveChannelCommandHandler.swift */; };
 		967AE4C81A2D6716E700506AEC4A076C /* IVISPERCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91244D6E38863FC2C658C738106F98E3 /* IVISPERCommandHandler.swift */; };
 		97C94049526D91815956A9E9053E5E56 /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B86BFDCB3E3D0305CA457955DFD37F /* ChaCha20.swift */; };
 		9A1AF868CFD909AD925F8542E099F870 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EF1F74053E3FFF61FEDDAAB1CB702D /* MD5.swift */; };
@@ -85,36 +93,35 @@
 		9D7B45CE2E4978F45D3F88AAD0323A4D /* RocketChatAdapter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B7DD482983E2AD8AB5492BD4C6FBC365 /* RocketChatAdapter.bundle */; };
 		9FE82553091F8463ADCE61059F2C0030 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAD1409A9128ED2123D75DC3703AEE8 /* SHA2.swift */; };
 		A04604857814D53A24F1816F0A70AA9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E60E5519EE28BD5999DE57DD41D38 /* Foundation.framework */; };
-		A11C93CC7C8057A07466356522799875 /* GetRoomIdCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E47F766A3C0F933E9DE37532CA363 /* GetRoomIdCommand.swift */; };
 		A3F29219EBC3931EF5E34745EA1C195E /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437EC5FB92C5A87B1C4C752D814681F /* AES+Foundation.swift */; };
+		A5163E3599C9E2AE98E3FCA62CE9FCAD /* RocketChatAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31E640B8BF6E597A1441AE4FBF3E739 /* RocketChatAdapter.swift */; };
 		A7CAF1FCC82F9E15D764381E82283B63 /* DDPMethodResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331727B9AF37A5D92217036FAB257E4 /* DDPMethodResult.swift */; };
 		AA3FC7CFFAE532E2B0F0B8547F7728DE /* UInt32Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541412E63F87057C593219062F10CE9 /* UInt32Extension.swift */; };
 		AB6F879B42558E779AF68E5E8767FB49 /* MeteorDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B156DDF6534D4CB70DCC27A7FEE8C78 /* MeteorDocument.swift */; };
-		AFE8747513A6BB07ECDEF526415EE5C9 /* LogonCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89D02157D63250EC5BA60C0F90496F1 /* LogonCommand.swift */; };
 		B06CDF6278E24445FF9E768B6F6FB043 /* Pods-RocketChatAdapter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 324B62DE5D9CBE09AD2F755BDB3D316B /* Pods-RocketChatAdapter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B34111658E32DCD4A1E12E6B72A4796C /* DDPUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07288E4F911189A9921DA78A24BFBA35 /* DDPUtilities.swift */; };
+		B5EDDC241438FA1A6AD695C40E661069 /* GetRoomIdCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40784FBDDEDD0C3118FD4F362A596A33 /* GetRoomIdCommand.swift */; };
+		B75DCB096E202A2919B2D409344CFA5F /* AuthorizationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E8CBD20DCDB634C0B9FED30EEBB9D9 /* AuthorizationResult.swift */; };
 		B78431D075237D30FE5FCD5E4180DAC5 /* CompatibleCommandBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809105B3F4C4D090B7951B61A631DD45 /* CompatibleCommandBus.swift */; };
-		BC81C42C042A6381678F38F848D2176A /* MessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB788047DB337CF12B3B02681572189 /* MessageParser.swift */; };
 		BDE7DA9F2C9041BD4A1446BFCB4BB675 /* SwiftDDP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7AC319CC8B5846C21D598CCD197349 /* SwiftDDP.framework */; };
 		BE60F935D55EB687A866D03887640EA8 /* MeteorOAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828B6DC4612297DBD6E11F7A1BF8BCD /* MeteorOAuth.swift */; };
 		C23D2673D303545EB8588C1BE03DBAD5 /* MeteorOAuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513B8107E00ACD551EAECCEDA342FB67 /* MeteorOAuthServices.swift */; };
 		C25B11896589FFFF513F7DE0012CCFFC /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95343556E13F30D11BA1E20B0989EE0 /* Generics.swift */; };
-		C3570C574FD7361108E6E1482228846B /* RocketChatAdapterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7ABA4D254DCF851D04F68DEE013601 /* RocketChatAdapterProtocol.swift */; };
-		C3DDD932B143292504074061595739BF /* MessageHistoryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D022B46937678EB079F23E1CDB5188 /* MessageHistoryResult.swift */; };
+		C2FBB1F8121B2B5AFD58C5C933A056CF /* RegisterCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97264079308293AAA41B5DB6E25074B3 /* RegisterCommand.swift */; };
 		C41F24C42BE2F9B5E5064B26B34B87CF /* SwiftWebSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAF0D026FA118CCFFA5FDF2489E0C93 /* SwiftWebSocket.framework */; };
 		C45AE5AA5224EDCEF99089AA85F30AFD /* Pods-RocketChatAdapter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE722DD6BE59655316BCD4BE6132C3A7 /* Pods-RocketChatAdapter_Example-dummy.m */; };
 		C4EB14D280129BA52ED2A9CA51D67D45 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BFEBAE385227D398390F1D780D3FCD /* SHA1.swift */; };
+		C54CB5297E7CC85577072DC09E4DC861 /* SendMessageCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3428EFC0E4995FDF4A0D922AD3A8ADCF /* SendMessageCommandHandler.swift */; };
 		C59E713098D72CADA82C97AA700F6F16 /* BitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFCCB128BAD3120530E8D29C7A9CED5 /* BitExtension.swift */; };
-		C6D26C34B4155F502403DF3196D6AACD /* SetUserStatusCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F721F5CCACE346BD895C7ECC2B41E59E /* SetUserStatusCommandHandler.swift */; };
+		C6CD150884A5FD6E4517E7B5BDDCC420 /* RegisterCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC438EC0AACBE9C4A557BE08558DC3E2 /* RegisterCommandHandler.swift */; };
 		C84AD552D5AF1D723C652B1105EB47C6 /* CommandBusProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C555B89BCB6BD6E513C8ECEEE2CD0A /* CommandBusProtocol.swift */; };
 		C8B19E5A1D771C6D50D9066A108B107A /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547C7A3AEEB31229748E30064B7C5BF0 /* Poly1305.swift */; };
-		CBAFD57F206D28115C9E7EF8C444362A /* SendMessageCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA456B5FD1C20C0B5B3E76C73576B3 /* SendMessageCommand.swift */; };
 		CC970B48F3A5E79C961AA928A2226554 /* SwiftDDP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4E69EABA3CCC09D98EA14F858D70A64 /* SwiftDDP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CCCF21FFEBAA9DFCD6E708DABE517469 /* Meteor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB2021068017E84F218897E53E3C56 /* Meteor.swift */; };
-		CD5383526B11E789E61CF779EB483004 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACEAC7B8DB1595A1B02BB3DF626AFC4 /* Visitor.swift */; };
-		CFC2737FBC8C7D73D58E889C434CF021 /* SetUserStatusCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F42E6648F32E2F858215C592DBDF7 /* SetUserStatusCommand.swift */; };
 		D00CC349F98D09330F903F99897A9990 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47B6EEE2E50BC3CF28726FB87724465 /* Operators.swift */; };
 		D2494AF8396ACA6F7D6AFD73DF84C80B /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF68DB906337A41AF7726A98105130A8 /* HMAC.swift */; };
+		D3A44467CE4CDE0DCD2693E05CAD9585 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9302008DBC9D0788494A05E1393D5E /* User.swift */; };
+		D4AB979442A8BD0DF6E771F3F359828E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3B7296C4BDE79C70BFEF097536F03B /* Message.swift */; };
 		D6EFC2AAD5379CA5ED2D457C81BB41E8 /* MeteorOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EDD38B95C36F2604E95258BE95292C /* MeteorOAuthViewController.swift */; };
 		D9B6138BF8182D6E2661DE2C05BDC49E /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7E0FBC78188B43C21A9D9B9BC5F908 /* CryptoSwift.framework */; };
 		D9CB324477D6E411B9D796D63DFBAF6C /* AbstractCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA575120AED43006070286EE330D876D /* AbstractCollection.swift */; };
@@ -122,16 +129,15 @@
 		DD46590F7C31B86CD1B580B8ECD37739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E60E5519EE28BD5999DE57DD41D38 /* Foundation.framework */; };
 		DDB3C172495D2920234FE9C941882B0A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E11D6BC6F3826BC01217A9EF83AE0F7 /* WebKit.framework */; };
 		E31659F3034F471EDFBF335C1787216D /* UInt8Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D477083E199EA161E375D05304FB5CEC /* UInt8Extension.swift */; };
-		E61E6891F6FD36089E82A948ACDBC5C2 /* RocketChatAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C6F0394D46BA93E664312E8343D23E /* RocketChatAdapter.swift */; };
 		E70DC474081186FED164D0BDAD2BF2F5 /* MeteorCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB57002FEEF3E197110879F1970130D /* MeteorCollection.swift */; };
+		E7156CFFA0B9316C00FABD09A15D0018 /* GetUserNameSuggestionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C2D0D68FD8F17BF1ECEEE2ACD7E7A /* GetUserNameSuggestionCommand.swift */; };
 		E9A903DAE4CC30FFC58E10ACB5B0C4CF /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00095F6A891321F7B03077B456EBEE7D /* Utils+Foundation.swift */; };
 		EEBDF30209854D3FA0243A5FB038147B /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5807D07132BA16A763CA56139EEEE9E6 /* PKCS7.swift */; };
-		F230157CEBA7F8FD95C6A5908E2D1387 /* GetChannelHistoryCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125A8152E13B509D035B070D179AF0C /* GetChannelHistoryCommand.swift */; };
+		F214750476B8CCCF4550301633F235E8 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A314BC070C8DF64AF76A1DF54E8DA91 /* Channel.swift */; };
 		F26B9FB6A14A50622264C37B5C444106 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49E60E5519EE28BD5999DE57DD41D38 /* Foundation.framework */; };
 		F2A24DDC4AD6BD23B60FB9695177DA69 /* IVISPERCommandBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF43DC22AB5E008EB01B380CC44AFF /* IVISPERCommandBus.swift */; };
 		F43830D26949F9A4B88CD44CE442692E /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7D8A24313E4BE37976B00389236BFB /* XCGLogger.framework */; };
 		F66F9B01367A9D691CB6C948175B84D3 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291E527ADDD690AB89CB48CF68E3673 /* Authenticator.swift */; };
-		F82CB012CD29FC90987ED45CBB924E03 /* GetChannelsCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757CDB128DADAE1AC423A94C488D87F /* GetChannelsCommandHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,61 +271,61 @@
 
 /* Begin PBXFileReference section */
 		00095F6A891321F7B03077B456EBEE7D /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
+		022ADC7F4554135907304A7D31F6BB99 /* RocketChatAdapterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketChatAdapterProtocol.swift; sourceTree = "<group>"; };
 		06EF1F74053E3FFF61FEDDAAB1CB702D /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
 		07288E4F911189A9921DA78A24BFBA35 /* DDPUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPUtilities.swift; path = SwiftDDP/DDPUtilities.swift; sourceTree = "<group>"; };
+		07F16905CD47BD4E4D0D1CBDF8EE49E9 /* SetUserNameCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SetUserNameCommand.swift; sourceTree = "<group>"; };
 		09A0B3830F15399E959D007CECF36FCD /* XCGLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XCGLogger-dummy.m"; sourceTree = "<group>"; };
-		0A6F42E6648F32E2F858215C592DBDF7 /* SetUserStatusCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SetUserStatusCommand.swift; sourceTree = "<group>"; };
-		0C7ABA4D254DCF851D04F68DEE013601 /* RocketChatAdapterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketChatAdapterProtocol.swift; sourceTree = "<group>"; };
 		0C97A1B0F7BC52116D4C1FE83790E391 /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
 		0DCCFBB8CD6553F5E44902AB7410ECE4 /* VISPER-CommandBus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "VISPER-CommandBus.modulemap"; sourceTree = "<group>"; };
-		0F26E5303FF89EE5D1FD3AE6F405FE22 /* AuthorizationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationResult.swift; sourceTree = "<group>"; };
 		11C555B89BCB6BD6E513C8ECEEE2CD0A /* CommandBusProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandBusProtocol.swift; path = Pod/Classes/CommandBus/CommandBusProtocol.swift; sourceTree = "<group>"; };
+		130AEF419C057A984303CD18C293F1F4 /* JoinChannelCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JoinChannelCommandHandler.swift; sourceTree = "<group>"; };
 		13C3F32ABC3ABD9826C0425E00B56547 /* CommandBus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandBus.swift; path = Pod/Classes/CommandBus/CommandBus.swift; sourceTree = "<group>"; };
-		14D022B46937678EB079F23E1CDB5188 /* MessageHistoryResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MessageHistoryResult.swift; sourceTree = "<group>"; };
 		1693A9A4F87957A582F78747AC2662C0 /* Pods_RocketChatAdapter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RocketChatAdapter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		179385AC52CC3CEF7BA2EBAFAEC5EB46 /* RocketChatAdapter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RocketChatAdapter-umbrella.h"; sourceTree = "<group>"; };
+		19E8CBD20DCDB634C0B9FED30EEBB9D9 /* AuthorizationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthorizationResult.swift; sourceTree = "<group>"; };
 		1C523224AB73D3737E4562900AEE510B /* Pods-RocketChatAdapter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RocketChatAdapter_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		1DF52E6933517358CF5B0643311D9AC0 /* Pods-RocketChatAdapter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RocketChatAdapter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2169F9221B61D9EC4D2C781237A25BD2 /* String+LinuxFoundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+LinuxFoundation.swift"; path = "Sources/CryptoSwift/Foundation/String+LinuxFoundation.swift"; sourceTree = "<group>"; };
 		240AD43253F8B5AEAA562B340E5C1A47 /* IntegerConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerConvertible.swift; path = Sources/CryptoSwift/IntegerConvertible.swift; sourceTree = "<group>"; };
+		24638471AF9CECD6A81B902CC9B701D7 /* Visitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		24E33E842AF1258E4906B9FB234138EE /* SwiftDDP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftDDP.xcconfig; sourceTree = "<group>"; };
 		28E8D1E247F41C92E3797116CF37A212 /* DDPCompletion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPCompletion.swift; path = SwiftDDP/DDPCompletion.swift; sourceTree = "<group>"; };
-		2DB788047DB337CF12B3B02681572189 /* MessageParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MessageParser.swift; sourceTree = "<group>"; };
 		2E11D6BC6F3826BC01217A9EF83AE0F7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		2EDC06842DC4DAFA05643E61B8D642B6 /* CommandHandlerProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandHandlerProtocol.swift; path = Pod/Classes/CommandBus/CommandHandlerProtocol.swift; sourceTree = "<group>"; };
 		2F92731432FEBAC35C45215C24325D9C /* RocketChatAdapter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RocketChatAdapter.xcconfig; sourceTree = "<group>"; };
 		30EC8B8D2B694FCB438019000C50FBAD /* VISPER-CommandBus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VISPER-CommandBus-prefix.pch"; sourceTree = "<group>"; };
 		324B62DE5D9CBE09AD2F755BDB3D316B /* Pods-RocketChatAdapter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RocketChatAdapter_Example-umbrella.h"; sourceTree = "<group>"; };
+		3428EFC0E4995FDF4A0D922AD3A8ADCF /* SendMessageCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SendMessageCommandHandler.swift; sourceTree = "<group>"; };
 		35BFECEB3AC14733926547D867E11854 /* Pods-RocketChatAdapter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RocketChatAdapter_Example.release.xcconfig"; sourceTree = "<group>"; };
 		371C53C8AACFB46B03B4944E7D7D33ED /* XCGLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XCGLogger.xcconfig; sourceTree = "<group>"; };
 		3B0D0CBD8A5B6BFD9611D31D8DCE5867 /* XCGLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-umbrella.h"; sourceTree = "<group>"; };
 		3BAD1409A9128ED2123D75DC3703AEE8 /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
+		3DBA07946FA6701B5C51F13C2BFEFEFA /* MessageHistoryResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MessageHistoryResult.swift; sourceTree = "<group>"; };
+		4049D6C1C7CD41F7AE7E17F97D48A08F /* MessageParserProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MessageParserProtocol.swift; sourceTree = "<group>"; };
+		40784FBDDEDD0C3118FD4F362A596A33 /* GetRoomIdCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetRoomIdCommand.swift; sourceTree = "<group>"; };
 		4541412E63F87057C593219062F10CE9 /* UInt32Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt32Extension.swift; path = Sources/CryptoSwift/UInt32Extension.swift; sourceTree = "<group>"; };
 		4894F1EEA7183E83A447901CEE0FF407 /* CSArrayType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSArrayType+Extensions.swift"; path = "Sources/CryptoSwift/CSArrayType+Extensions.swift"; sourceTree = "<group>"; };
-		49F1F3F4555A08285C03D0104B8A0167 /* GetChannelHistoryCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetChannelHistoryCommandHandler.swift; sourceTree = "<group>"; };
-		4A9F60B892B0219425CA7B4B0474DD87 /* LogonCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogonCommandHandler.swift; sourceTree = "<group>"; };
+		4A314BC070C8DF64AF76A1DF54E8DA91 /* Channel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		4AD1C8D719729BC9FBF71BEA6A372D11 /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
-		4B278583F2AB3DBBC077203C364ECFD7 /* LeaveChannelCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LeaveChannelCommand.swift; sourceTree = "<group>"; };
+		4B3B7296C4BDE79C70BFEF097536F03B /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4BE8D72C5C47AFAE5F6DEFA7583D75EB /* String+FoundationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+FoundationExtension.swift"; path = "Sources/CryptoSwift/Foundation/String+FoundationExtension.swift"; sourceTree = "<group>"; };
 		4D57B8DA62E66D670AA93E4C8FCBEF64 /* ArrayUInt8+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArrayUInt8+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ArrayUInt8+Foundation.swift"; sourceTree = "<group>"; };
 		4F54CDE30EC29BDECB3A031AED345CF0 /* DDPMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPMessage.swift; path = SwiftDDP/DDPMessage.swift; sourceTree = "<group>"; };
 		513B8107E00ACD551EAECCEDA342FB67 /* MeteorOAuthServices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeteorOAuthServices.swift; path = SwiftDDP/MeteorOAuthServices.swift; sourceTree = "<group>"; };
 		5291E527ADDD690AB89CB48CF68E3673 /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Sources/CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
-		54662DE5D5A813AB8E02748BD45D2D03 /* SendMessageCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SendMessageCommandHandler.swift; sourceTree = "<group>"; };
 		547C7A3AEEB31229748E30064B7C5BF0 /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
 		5512773A91CC11B6CC1486509A283F2A /* SwiftWebSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftWebSocket-dummy.m"; sourceTree = "<group>"; };
 		55EB87F0039832022125A91756A50CAA /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChaCha20+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
 		5733930259D437CB1904995C9A951D26 /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS5.swift; sourceTree = "<group>"; };
 		5789C82220913A21750730F7D002884E /* XCGLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XCGLogger.modulemap; sourceTree = "<group>"; };
 		5807D07132BA16A763CA56139EEEE9E6 /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS7.swift; sourceTree = "<group>"; };
-		5819A816603666E9303F85893F5D20FC /* MessageParserProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MessageParserProtocol.swift; sourceTree = "<group>"; };
 		58D5D7844851651635D07E43E8A51F97 /* Pods-RocketChatAdapter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RocketChatAdapter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A61441938FB326EB6DE4321806FCD4F /* SwiftDDP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftDDP.modulemap; sourceTree = "<group>"; };
 		5B54A327EADA98D1B178AA90C17E1543 /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
 		5C4D636B54FC8AAD541A0772355F1137 /* RocketChatAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RocketChatAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F4C836FFDC705BE879C7E6DEAEA7CA9 /* RegisterCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegisterCommandHandler.swift; sourceTree = "<group>"; };
-		60EB2AFBE8455EE318D0BFCAF0B8B96B /* JoinChannelCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JoinChannelCommandHandler.swift; sourceTree = "<group>"; };
 		6331727B9AF37A5D92217036FAB257E4 /* DDPMethodResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPMethodResult.swift; path = SwiftDDP/DDPMethodResult.swift; sourceTree = "<group>"; };
+		6452012BA39E6B943D0C19324ECEB6D9 /* GetChannelHistoryCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetChannelHistoryCommand.swift; sourceTree = "<group>"; };
 		64D96EE32A8BDF280C4D234DB43141C1 /* SwiftWebSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-umbrella.h"; sourceTree = "<group>"; };
 		6500DC8CA9EF72E564F023E9DAFAEFF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6515455DEC64A743ECB4E62D3CAC5944 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -331,80 +337,86 @@
 		6FFBE0A4F017B4F44704AB5C1BC60E97 /* VISPER-CommandBus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VISPER-CommandBus-umbrella.h"; sourceTree = "<group>"; };
 		72F9EDDDB11ADE00CDA101FE05B75BB6 /* CompatibleCommandBusProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompatibleCommandBusProtocol.swift; path = Pod/Classes/CommandBus/CompatibleCommandBusProtocol.swift; sourceTree = "<group>"; };
 		72FA57B2E03665815A1E9EF5B0D8DDDE /* Hash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hash.swift; path = Sources/CryptoSwift/Hash.swift; sourceTree = "<group>"; };
-		7757CDB128DADAE1AC423A94C488D87F /* GetChannelsCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetChannelsCommandHandler.swift; sourceTree = "<group>"; };
 		7828B6DC4612297DBD6E11F7A1BF8BCD /* MeteorOAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeteorOAuth.swift; path = SwiftDDP/MeteorOAuth.swift; sourceTree = "<group>"; };
 		7A118333682BE8BC0CEC334A70A272C3 /* Pods-RocketChatAdapter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RocketChatAdapter_Example-resources.sh"; sourceTree = "<group>"; };
+		7A562F47D5F0132EF33BC2BD35A9AF1F /* GetChannelsCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetChannelsCommandHandler.swift; sourceTree = "<group>"; };
 		7AAF43DC22AB5E008EB01B380CC44AFF /* IVISPERCommandBus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IVISPERCommandBus.swift; path = Pod/Classes/CommandBus/IVISPERCommandBus.swift; sourceTree = "<group>"; };
 		7B4A45E3DC02A723F6E13CB5FDD25A36 /* Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Padding.swift; path = Sources/CryptoSwift/Padding.swift; sourceTree = "<group>"; };
 		7D27EA012C0327A42F5C0A0826A302E9 /* SwiftDDP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDDP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FFA456B5FD1C20C0B5B3E76C73576B3 /* SendMessageCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SendMessageCommand.swift; sourceTree = "<group>"; };
+		7E5C2D0D68FD8F17BF1ECEEE2ACD7E7A /* GetUserNameSuggestionCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetUserNameSuggestionCommand.swift; sourceTree = "<group>"; };
 		809105B3F4C4D090B7951B61A631DD45 /* CompatibleCommandBus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompatibleCommandBus.swift; path = Pod/Classes/CommandBus/CompatibleCommandBus.swift; sourceTree = "<group>"; };
 		809B256CE88A0762EB71F6F63A778530 /* Pods-RocketChatAdapter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RocketChatAdapter_Tests.modulemap"; sourceTree = "<group>"; };
 		80A45B3AA1509C44D81B87D67E0DF5E9 /* VISPER-CommandBus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VISPER-CommandBus-dummy.m"; sourceTree = "<group>"; };
-		80ED7B58B79A284C529B2790526BA03D /* GetRoomIdCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetRoomIdCommandHandler.swift; sourceTree = "<group>"; };
 		819AAF4DB144ACF6E6862D62751FFF19 /* Pods-RocketChatAdapter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RocketChatAdapter_Tests-umbrella.h"; sourceTree = "<group>"; };
-		825FD5B2F4FF6E1AF43F5C00EF511A29 /* JoinChannelCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JoinChannelCommand.swift; sourceTree = "<group>"; };
 		85BFEBAE385227D398390F1D780D3FCD /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
 		85E00C8400853D00CE797740A9A8245A /* Pods-RocketChatAdapter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RocketChatAdapter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8A34C1E61750D0DC7DC0BB1731CF8E6F /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		889CAC1F6D6D2CE76C9A0B9BF4CAB6B0 /* SendForgotPasswordEMailCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SendForgotPasswordEMailCommandHandler.swift; sourceTree = "<group>"; };
 		8A475D82F1CD74E7D5B88C207478ACE0 /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = Sources/CryptoSwift/Cipher.swift; sourceTree = "<group>"; };
 		8D13586587205EDAEC18AB9E93E460B3 /* SwiftWebSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftWebSocket.modulemap; sourceTree = "<group>"; };
 		8EC16DCEC6B2126AA02C4CCC503DE300 /* DDPExponentialBackoff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPExponentialBackoff.swift; path = SwiftDDP/DDPExponentialBackoff.swift; sourceTree = "<group>"; };
 		91244D6E38863FC2C658C738106F98E3 /* IVISPERCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IVISPERCommandHandler.swift; path = Pod/Classes/CommandBus/IVISPERCommandHandler.swift; sourceTree = "<group>"; };
 		95FB0D31977E63EE58B90BA96DB1F703 /* SwiftWebSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftWebSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98C6F0394D46BA93E664312E8343D23E /* RocketChatAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketChatAdapter.swift; sourceTree = "<group>"; };
+		97264079308293AAA41B5DB6E25074B3 /* RegisterCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegisterCommand.swift; sourceTree = "<group>"; };
+		97F48629A1A763ACB222C66DD680F8EE /* GetRoomIdCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetRoomIdCommandHandler.swift; sourceTree = "<group>"; };
+		99EFB146A3547F09E6B10BBC0E064D99 /* SetUserStatusCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SetUserStatusCommandHandler.swift; sourceTree = "<group>"; };
 		9AB3F6989C6B601B165BB966C1B9A60D /* UInt64Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt64Extension.swift; path = Sources/CryptoSwift/UInt64Extension.swift; sourceTree = "<group>"; };
 		9B156DDF6534D4CB70DCC27A7FEE8C78 /* MeteorDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeteorDocument.swift; path = SwiftDDP/MeteorDocument.swift; sourceTree = "<group>"; };
+		9E67EAC966204E295A10BAD6FD98FA52 /* SetUserStatusCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SetUserStatusCommand.swift; sourceTree = "<group>"; };
 		9FC65338079908B372DD2D586998EA65 /* Pods-RocketChatAdapter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RocketChatAdapter_Tests-resources.sh"; sourceTree = "<group>"; };
 		A1F8115054D62A35D1412466D31B1734 /* RocketChatAdapter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RocketChatAdapter.modulemap; sourceTree = "<group>"; };
 		A47B6EEE2E50BC3CF28726FB87724465 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/CryptoSwift/Operators.swift; sourceTree = "<group>"; };
 		A5AA875691E8B9A7A3763481370EF1D3 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
 		AA91140A6B8EE54C5FE76D108C8040D5 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/WebSocket.swift; sourceTree = "<group>"; };
-		AACEAC7B8DB1595A1B02BB3DF626AFC4 /* Visitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		ABB57002FEEF3E197110879F1970130D /* MeteorCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeteorCollection.swift; path = SwiftDDP/MeteorCollection.swift; sourceTree = "<group>"; };
+		AC438EC0AACBE9C4A557BE08558DC3E2 /* RegisterCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegisterCommandHandler.swift; sourceTree = "<group>"; };
 		AE243AB25CF40FF6DD08FFA63AD7AFB2 /* XCGLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XCGLogger-prefix.pch"; sourceTree = "<group>"; };
 		AE7E0FBC78188B43C21A9D9B9BC5F908 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEC4EE7CD84879205E196E8243D55A9 /* XCGLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCGLogger.swift; path = XCGLogger/Library/XCGLogger/XCGLogger.swift; sourceTree = "<group>"; };
-		B125A8152E13B509D035B070D179AF0C /* GetChannelHistoryCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetChannelHistoryCommand.swift; sourceTree = "<group>"; };
 		B280B436DCA35E7B227DF308FA0931D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2FB2021068017E84F218897E53E3C56 /* Meteor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Meteor.swift; path = SwiftDDP/Meteor.swift; sourceTree = "<group>"; };
-		B32CC7BFD322147AD3F2121FE3F1E866 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		B55707485759EEFF50F721E9C455EAEB /* GetChannelsCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetChannelsCommand.swift; sourceTree = "<group>"; };
 		B7DD482983E2AD8AB5492BD4C6FBC365 /* RocketChatAdapter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketChatAdapter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94DB074DD544226857737E3486852BB /* CRC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CRC.swift; path = Sources/CryptoSwift/CRC.swift; sourceTree = "<group>"; };
 		B9744B868179125F11DEB3442804E60F /* VISPER_CommandBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VISPER_CommandBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9B5140BCDF7037F9D2FBF17B05CF7C6 /* Channel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BAFCCB128BAD3120530E8D29C7A9CED5 /* BitExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BitExtension.swift; path = Sources/CryptoSwift/BitExtension.swift; sourceTree = "<group>"; };
 		BB812C6BDCC9F231990D8B212490A3FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD4261E97687DAB38B2F911599A489FB /* RocketChatAdapter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RocketChatAdapter-prefix.pch"; sourceTree = "<group>"; };
+		BE27316528D019131DA28E59997735D7 /* JoinChannelCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JoinChannelCommand.swift; sourceTree = "<group>"; };
 		C191B761D4B96C5BA286DFCE7FB86B2C /* IntExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExtension.swift; path = Sources/CryptoSwift/IntExtension.swift; sourceTree = "<group>"; };
 		C1D04771A8580C301EAED111147FB812 /* Pods-RocketChatAdapter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RocketChatAdapter_Example.modulemap"; sourceTree = "<group>"; };
+		C2AB3178D0554B88B7E2DA0AECB7A9E9 /* SendForgotPasswordEMailCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SendForgotPasswordEMailCommand.swift; sourceTree = "<group>"; };
 		C3B86BFDCB3E3D0305CA457955DFD37F /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
 		C437EC5FB92C5A87B1C4C752D814681F /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
 		C47579EB6145085CDCEC958C42B9FA6C /* EJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EJSON.swift; path = SwiftDDP/EJSON.swift; sourceTree = "<group>"; };
+		C62E6BE9789D73F237E4EF52B236AFC5 /* LogonCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogonCommand.swift; sourceTree = "<group>"; };
+		C67EAA6F98B25458CBBEAEB33CBA003D /* SetUsernameCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SetUsernameCommandHandler.swift; sourceTree = "<group>"; };
 		C7396AC0E527332264FD7D322A480087 /* VISPER-CommandBus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VISPER-CommandBus.xcconfig"; sourceTree = "<group>"; };
 		C939F8EF4B5547BB7A8BD3958C717013 /* Pods-RocketChatAdapter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RocketChatAdapter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C95955C0538C3F6B3716BE06D6D11E8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C96E47F766A3C0F933E9DE37532CA363 /* GetRoomIdCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetRoomIdCommand.swift; sourceTree = "<group>"; };
 		CBB6E45CB68349BAD3B1E91AFF3E7B87 /* DDPEvents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPEvents.swift; path = SwiftDDP/DDPEvents.swift; sourceTree = "<group>"; };
 		CBF3C2A1034CBAA9D86CD9CFFD624EF1 /* CipherBlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CipherBlockMode.swift; path = Sources/CryptoSwift/CipherBlockMode.swift; sourceTree = "<group>"; };
 		CC0BD30A1E140C4DCD70E2D599B2EAF0 /* Pods-RocketChatAdapter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RocketChatAdapter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D0FB23782C673673FC5FF0AECE30A75E /* HashProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashProtocol.swift; path = Sources/CryptoSwift/HashProtocol.swift; sourceTree = "<group>"; };
 		D15A554E407F39DBB9528E2A7262B4DC /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Rabbit+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift"; sourceTree = "<group>"; };
 		D21343CB7CEEF579188C0C1F221C6FD7 /* BytesSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BytesSequence.swift; path = Sources/CryptoSwift/BytesSequence.swift; sourceTree = "<group>"; };
+		D3DEA47CAD4B9296B7D8578BDF2A250E /* GetChannelsCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetChannelsCommand.swift; sourceTree = "<group>"; };
+		D3F470D218F47A3B404CC04368EAFB5E /* LeaveChannelCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LeaveChannelCommand.swift; sourceTree = "<group>"; };
 		D4452D98EA1573184B3ECDA4D74F53B0 /* SwiftWebSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftWebSocket.xcconfig; sourceTree = "<group>"; };
 		D477083E199EA161E375D05304FB5CEC /* UInt8Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt8Extension.swift; path = Sources/CryptoSwift/UInt8Extension.swift; sourceTree = "<group>"; };
 		D70FAA73F6C6926E8FBEBE88A9021C23 /* DDPExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPExtensions.swift; path = SwiftDDP/DDPExtensions.swift; sourceTree = "<group>"; };
 		D7EDD38B95C36F2604E95258BE95292C /* MeteorOAuthViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MeteorOAuthViewController.swift; path = SwiftDDP/MeteorOAuthViewController.swift; sourceTree = "<group>"; };
+		D890C095D18B502B36137C2710C91A1B /* LeaveChannelCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LeaveChannelCommandHandler.swift; sourceTree = "<group>"; };
 		D8CA3AC8789768DBBBCB932DA9647E69 /* SwiftWebSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftWebSocket-prefix.pch"; sourceTree = "<group>"; };
 		D95343556E13F30D11BA1E20B0989EE0 /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
-		D9F27FBCED8AE662BA2EC6C111318552 /* RegisterCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegisterCommand.swift; sourceTree = "<group>"; };
+		DA102185111DEDF50068E6898723D210 /* GetUserNameSuggestionCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetUserNameSuggestionCommandHandler.swift; sourceTree = "<group>"; };
 		DA575120AED43006070286EE330D876D /* AbstractCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AbstractCollection.swift; path = SwiftDDP/AbstractCollection.swift; sourceTree = "<group>"; };
+		DB4313F9D403675A186D6FF20D1B0D3F /* LogonCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogonCommandHandler.swift; sourceTree = "<group>"; };
 		DC0790BE1C870702BF29B300C9A91DC6 /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9D3917177D6BD2777533BDF6FF99B2 /* Pods-RocketChatAdapter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RocketChatAdapter_Tests-dummy.m"; sourceTree = "<group>"; };
+		DD7334152C021F6264F6BCBE65E767A7 /* GetChannelHistoryCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GetChannelHistoryCommandHandler.swift; sourceTree = "<group>"; };
 		DD7AC319CC8B5846C21D598CCD197349 /* SwiftDDP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDDP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE722DD6BE59655316BCD4BE6132C3A7 /* Pods-RocketChatAdapter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RocketChatAdapter_Example-dummy.m"; sourceTree = "<group>"; };
+		E0094EECF94553631C1E34D288F888ED /* SendMessageCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SendMessageCommand.swift; sourceTree = "<group>"; };
 		E14E8831FBD76BD6032B5CCF19C911EA /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
 		E34F7523A5674F8B99F6CCDC13420FA4 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
 		E4460B64E90013375F6CD1DE9364D22C /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
@@ -412,7 +424,6 @@
 		E4A5885CFF4DDC22E3FAC3A369296CDB /* DDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDPClient.swift; path = SwiftDDP/DDPClient.swift; sourceTree = "<group>"; };
 		E4A7945E4280461D9C47A7276AB5B8F9 /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
 		E4E69EABA3CCC09D98EA14F858D70A64 /* SwiftDDP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDDP-umbrella.h"; sourceTree = "<group>"; };
-		E574F8B002149919A4D54CCB0A739205 /* LeaveChannelCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LeaveChannelCommandHandler.swift; sourceTree = "<group>"; };
 		E5F6220386BCBA31898CF8A5B44E8D89 /* VISPERCommandBus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VISPERCommandBus.swift; path = Pod/Classes/CommandBus/VISPERCommandBus.swift; sourceTree = "<group>"; };
 		E633F3B4886A68FE66DB047526A39C04 /* Pods-RocketChatAdapter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RocketChatAdapter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E6EC386805F9A872AC6423B9FFE0F0B4 /* SwiftDDP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftDDP-dummy.m"; sourceTree = "<group>"; };
@@ -422,12 +433,13 @@
 		EB12DA5BE76E3E75B220ADFFA6A0BA91 /* Multiplatform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Multiplatform.swift; path = Sources/CryptoSwift/Multiplatform.swift; sourceTree = "<group>"; };
 		EF68DB906337A41AF7726A98105130A8 /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/CryptoSwift/HMAC.swift; sourceTree = "<group>"; };
 		EF7D8A24313E4BE37976B00389236BFB /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31E640B8BF6E597A1441AE4FBF3E739 /* RocketChatAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RocketChatAdapter.swift; sourceTree = "<group>"; };
 		F336804416B91AD7995CE1DAAC808BE9 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B991B0D7435BB51D44A28415FF0B53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6B0E514B05F0BE696827D796F7A4631 /* SwiftDDP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDDP-prefix.pch"; sourceTree = "<group>"; };
-		F721F5CCACE346BD895C7ECC2B41E59E /* SetUserStatusCommandHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SetUserStatusCommandHandler.swift; sourceTree = "<group>"; };
 		F7A05034C9483C26C81F250FD757B8BA /* NSData+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSData+Extension.swift"; path = "Sources/CryptoSwift/Foundation/NSData+Extension.swift"; sourceTree = "<group>"; };
-		F89D02157D63250EC5BA60C0F90496F1 /* LogonCommand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogonCommand.swift; sourceTree = "<group>"; };
+		FA994E0A35E8EF4D78968CDE221CEDAA /* MessageParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MessageParser.swift; sourceTree = "<group>"; };
+		FB9302008DBC9D0788494A05E1393D5E /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FB9B088DA75BED8391053B00DC53E54A /* ArraySliceUInt8+Bytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArraySliceUInt8+Bytes.swift"; path = "Sources/CryptoSwift/ArraySliceUInt8+Bytes.swift"; sourceTree = "<group>"; };
 		FF6D03C98A2D700B8D3E7A1112F9A2D3 /* VISPER_CommandBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VISPER_CommandBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB173A2388F2FE7C0CA38C1A9FFD76C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -632,22 +644,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		68F66463515B261D0ECE6877B2716947 /* Commands */ = {
-			isa = PBXGroup;
-			children = (
-				B125A8152E13B509D035B070D179AF0C /* GetChannelHistoryCommand.swift */,
-				B55707485759EEFF50F721E9C455EAEB /* GetChannelsCommand.swift */,
-				C96E47F766A3C0F933E9DE37532CA363 /* GetRoomIdCommand.swift */,
-				825FD5B2F4FF6E1AF43F5C00EF511A29 /* JoinChannelCommand.swift */,
-				4B278583F2AB3DBBC077203C364ECFD7 /* LeaveChannelCommand.swift */,
-				F89D02157D63250EC5BA60C0F90496F1 /* LogonCommand.swift */,
-				D9F27FBCED8AE662BA2EC6C111318552 /* RegisterCommand.swift */,
-				7FFA456B5FD1C20C0B5B3E76C73576B3 /* SendMessageCommand.swift */,
-				0A6F42E6648F32E2F858215C592DBDF7 /* SetUserStatusCommand.swift */,
-			);
-			path = Commands;
-			sourceTree = "<group>";
-		};
 		6B0DD4FF2C31903794DC6E90B402C1AA /* Pods-RocketChatAdapter_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -669,7 +665,7 @@
 		733FA2629BD7663DA5A18C7B35FC9FC5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F06FBB7DB2C026FE0BA948A7657F4DAC /* Classes */,
+				B3ED47A5CF5C43CF0310B03DA9ACFFE4 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -713,20 +709,17 @@
 			path = SwiftWebSocket;
 			sourceTree = "<group>";
 		};
-		966EC2107FF9A6587985D15A35983FF6 /* CommandHandler */ = {
+		A4E3397DB0F6D42A11298B84686A31E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				49F1F3F4555A08285C03D0104B8A0167 /* GetChannelHistoryCommandHandler.swift */,
-				7757CDB128DADAE1AC423A94C488D87F /* GetChannelsCommandHandler.swift */,
-				80ED7B58B79A284C529B2790526BA03D /* GetRoomIdCommandHandler.swift */,
-				60EB2AFBE8455EE318D0BFCAF0B8B96B /* JoinChannelCommandHandler.swift */,
-				E574F8B002149919A4D54CCB0A739205 /* LeaveChannelCommandHandler.swift */,
-				4A9F60B892B0219425CA7B4B0474DD87 /* LogonCommandHandler.swift */,
-				5F4C836FFDC705BE879C7E6DEAEA7CA9 /* RegisterCommandHandler.swift */,
-				54662DE5D5A813AB8E02748BD45D2D03 /* SendMessageCommandHandler.swift */,
-				F721F5CCACE346BD895C7ECC2B41E59E /* SetUserStatusCommandHandler.swift */,
+				19E8CBD20DCDB634C0B9FED30EEBB9D9 /* AuthorizationResult.swift */,
+				4A314BC070C8DF64AF76A1DF54E8DA91 /* Channel.swift */,
+				4B3B7296C4BDE79C70BFEF097536F03B /* Message.swift */,
+				3DBA07946FA6701B5C51F13C2BFEFEFA /* MessageHistoryResult.swift */,
+				FB9302008DBC9D0788494A05E1393D5E /* User.swift */,
+				24638471AF9CECD6A81B902CC9B701D7 /* Visitor.swift */,
 			);
-			path = CommandHandler;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A8194F40CE73E2BD66FCDB8935B5BD38 /* Pods */ = {
@@ -741,17 +734,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BED4C86FA0A35F4642FE8437DF455EEE /* Model */ = {
+		B3ED47A5CF5C43CF0310B03DA9ACFFE4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0F26E5303FF89EE5D1FD3AE6F405FE22 /* AuthorizationResult.swift */,
-				B9B5140BCDF7037F9D2FBF17B05CF7C6 /* Channel.swift */,
-				B32CC7BFD322147AD3F2121FE3F1E866 /* Message.swift */,
-				14D022B46937678EB079F23E1CDB5188 /* MessageHistoryResult.swift */,
-				8A34C1E61750D0DC7DC0BB1731CF8E6F /* User.swift */,
-				AACEAC7B8DB1595A1B02BB3DF626AFC4 /* Visitor.swift */,
+				FA994E0A35E8EF4D78968CDE221CEDAA /* MessageParser.swift */,
+				4049D6C1C7CD41F7AE7E17F97D48A08F /* MessageParserProtocol.swift */,
+				F31E640B8BF6E597A1441AE4FBF3E739 /* RocketChatAdapter.swift */,
+				022ADC7F4554135907304A7D31F6BB99 /* RocketChatAdapterProtocol.swift */,
+				D912646828B5BB7F6EA884A68345D581 /* CommandHandler */,
+				ED47BB5D1B23AFF42D9659692FB5713C /* Commands */,
+				A4E3397DB0F6D42A11298B84686A31E7 /* Model */,
 			);
-			path = Model;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		BF4D9E99B9E854AA5154C8B7C70D0DD2 /* CryptoSwift */ = {
@@ -819,6 +813,25 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
+		D912646828B5BB7F6EA884A68345D581 /* CommandHandler */ = {
+			isa = PBXGroup;
+			children = (
+				DD7334152C021F6264F6BCBE65E767A7 /* GetChannelHistoryCommandHandler.swift */,
+				7A562F47D5F0132EF33BC2BD35A9AF1F /* GetChannelsCommandHandler.swift */,
+				97F48629A1A763ACB222C66DD680F8EE /* GetRoomIdCommandHandler.swift */,
+				DA102185111DEDF50068E6898723D210 /* GetUserNameSuggestionCommandHandler.swift */,
+				130AEF419C057A984303CD18C293F1F4 /* JoinChannelCommandHandler.swift */,
+				D890C095D18B502B36137C2710C91A1B /* LeaveChannelCommandHandler.swift */,
+				DB4313F9D403675A186D6FF20D1B0D3F /* LogonCommandHandler.swift */,
+				AC438EC0AACBE9C4A557BE08558DC3E2 /* RegisterCommandHandler.swift */,
+				889CAC1F6D6D2CE76C9A0B9BF4CAB6B0 /* SendForgotPasswordEMailCommandHandler.swift */,
+				3428EFC0E4995FDF4A0D922AD3A8ADCF /* SendMessageCommandHandler.swift */,
+				C67EAA6F98B25458CBBEAEB33CBA003D /* SetUsernameCommandHandler.swift */,
+				99EFB146A3547F09E6B10BBC0E064D99 /* SetUserStatusCommandHandler.swift */,
+			);
+			path = CommandHandler;
+			sourceTree = "<group>";
+		};
 		DAA15203960721A00B7CF706A0E0B20B /* VISPER-CommandBus */ = {
 			isa = PBXGroup;
 			children = (
@@ -844,18 +857,23 @@
 			path = XCGLogger;
 			sourceTree = "<group>";
 		};
-		F06FBB7DB2C026FE0BA948A7657F4DAC /* Classes */ = {
+		ED47BB5D1B23AFF42D9659692FB5713C /* Commands */ = {
 			isa = PBXGroup;
 			children = (
-				2DB788047DB337CF12B3B02681572189 /* MessageParser.swift */,
-				5819A816603666E9303F85893F5D20FC /* MessageParserProtocol.swift */,
-				98C6F0394D46BA93E664312E8343D23E /* RocketChatAdapter.swift */,
-				0C7ABA4D254DCF851D04F68DEE013601 /* RocketChatAdapterProtocol.swift */,
-				966EC2107FF9A6587985D15A35983FF6 /* CommandHandler */,
-				68F66463515B261D0ECE6877B2716947 /* Commands */,
-				BED4C86FA0A35F4642FE8437DF455EEE /* Model */,
+				6452012BA39E6B943D0C19324ECEB6D9 /* GetChannelHistoryCommand.swift */,
+				D3DEA47CAD4B9296B7D8578BDF2A250E /* GetChannelsCommand.swift */,
+				40784FBDDEDD0C3118FD4F362A596A33 /* GetRoomIdCommand.swift */,
+				7E5C2D0D68FD8F17BF1ECEEE2ACD7E7A /* GetUserNameSuggestionCommand.swift */,
+				BE27316528D019131DA28E59997735D7 /* JoinChannelCommand.swift */,
+				D3F470D218F47A3B404CC04368EAFB5E /* LeaveChannelCommand.swift */,
+				C62E6BE9789D73F237E4EF52B236AFC5 /* LogonCommand.swift */,
+				97264079308293AAA41B5DB6E25074B3 /* RegisterCommand.swift */,
+				C2AB3178D0554B88B7E2DA0AECB7A9E9 /* SendForgotPasswordEMailCommand.swift */,
+				E0094EECF94553631C1E34D288F888ED /* SendMessageCommand.swift */,
+				07F16905CD47BD4E4D0D1CBDF8EE49E9 /* SetUserNameCommand.swift */,
+				9E67EAC966204E295A10BAD6FD98FA52 /* SetUserStatusCommand.swift */,
 			);
-			path = Classes;
+			path = Commands;
 			sourceTree = "<group>";
 		};
 		F1211AAF82B615F160D1599DA733D7D4 /* SwiftDDP */ = {
@@ -1070,7 +1088,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98A2E1DD18EE45690E655F6C764B4682 /* Build configuration list for PBXNativeTarget "RocketChatAdapter" */;
 			buildPhases = (
-				B0A9BC1C2A051A1F8CE9E242EA7A8077 /* Sources */,
+				3B64DA93095B709C68FA22B7130DD186 /* Sources */,
 				700D334629840C5E604EC26973CA47D7 /* Frameworks */,
 				67A86BBA8B767A18BA367A961D52ED15 /* Resources */,
 				254EB060055F0A7BB7D42E2680F7E1CF /* Headers */,
@@ -1208,6 +1226,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B64DA93095B709C68FA22B7130DD186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75DCB096E202A2919B2D409344CFA5F /* AuthorizationResult.swift in Sources */,
+				F214750476B8CCCF4550301633F235E8 /* Channel.swift in Sources */,
+				73EB0262CB21E5423FF31FED22BEED96 /* GetChannelHistoryCommand.swift in Sources */,
+				3CEF2E8EB8E735BFBD0F9C76348062E9 /* GetChannelHistoryCommandHandler.swift in Sources */,
+				0736004B1E791235E5C53376A40E2E11 /* GetChannelsCommand.swift in Sources */,
+				0262267F2FDD18918911896F7165978F /* GetChannelsCommandHandler.swift in Sources */,
+				B5EDDC241438FA1A6AD695C40E661069 /* GetRoomIdCommand.swift in Sources */,
+				4D0FF95C5D30E7715E732035A685F0B7 /* GetRoomIdCommandHandler.swift in Sources */,
+				E7156CFFA0B9316C00FABD09A15D0018 /* GetUserNameSuggestionCommand.swift in Sources */,
+				45803CCF685A7FDE8673832172164119 /* GetUserNameSuggestionCommandHandler.swift in Sources */,
+				01988CF929EA05D3B255AFE812D102CB /* JoinChannelCommand.swift in Sources */,
+				36F9AFB48A9A01636916B3C6870B77B9 /* JoinChannelCommandHandler.swift in Sources */,
+				0972E963897B35ED79C36FC97F5A816E /* LeaveChannelCommand.swift in Sources */,
+				27388190B75C02880F7908D75C42F8A1 /* LeaveChannelCommandHandler.swift in Sources */,
+				8C6F1BEF5FF38110DA5AAB49217FEEA5 /* LogonCommand.swift in Sources */,
+				7993D128F343308A2DD8574080C161DE /* LogonCommandHandler.swift in Sources */,
+				D4AB979442A8BD0DF6E771F3F359828E /* Message.swift in Sources */,
+				1A366B2DA23B434384648E044355270E /* MessageHistoryResult.swift in Sources */,
+				12FFB91A42A60508E45AE491A4C4BFDA /* MessageParser.swift in Sources */,
+				3FB18179D23F9D4426D98A9A74B6F22D /* MessageParserProtocol.swift in Sources */,
+				C2FBB1F8121B2B5AFD58C5C933A056CF /* RegisterCommand.swift in Sources */,
+				C6CD150884A5FD6E4517E7B5BDDCC420 /* RegisterCommandHandler.swift in Sources */,
+				6B29BDE91EE3ABEC9B90DA1F158108F8 /* RocketChatAdapter-dummy.m in Sources */,
+				A5163E3599C9E2AE98E3FCA62CE9FCAD /* RocketChatAdapter.swift in Sources */,
+				6540ED01F339BC6D3B15AE3F9361A422 /* RocketChatAdapterProtocol.swift in Sources */,
+				0D688D9FE782192FA92779A2FE0D8CE8 /* SendForgotPasswordEMailCommand.swift in Sources */,
+				1FBC55E7A03E8D12370FC94AFCF193AB /* SendForgotPasswordEMailCommandHandler.swift in Sources */,
+				733C25BF0F10AE49097832E2D8EFA798 /* SendMessageCommand.swift in Sources */,
+				C54CB5297E7CC85577072DC09E4DC861 /* SendMessageCommandHandler.swift in Sources */,
+				518F65E141F438041F274643CC4DB92A /* SetUserNameCommand.swift in Sources */,
+				0AB145EBEAFECE4438FD8BCB04FFEF8F /* SetUsernameCommandHandler.swift in Sources */,
+				3BE1130069D431957FC15C4910D8BC36 /* SetUserStatusCommand.swift in Sources */,
+				46F7B0CF1887B160CA40BDC56A9943A0 /* SetUserStatusCommandHandler.swift in Sources */,
+				D3A44467CE4CDE0DCD2693E05CAD9585 /* User.swift in Sources */,
+				00E464DC745E346F4D0A9C101EED51AB /* Visitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52ACCCB70CC509479E19CF5FC8CC8767 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1293,42 +1353,6 @@
 				C23D2673D303545EB8588C1BE03DBAD5 /* MeteorOAuthServices.swift in Sources */,
 				D6EFC2AAD5379CA5ED2D457C81BB41E8 /* MeteorOAuthViewController.swift in Sources */,
 				2624B116F1BEEC2129FA1AAFC58F8948 /* SwiftDDP-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B0A9BC1C2A051A1F8CE9E242EA7A8077 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82AFED75E4A58E4D3785E88C7934885B /* AuthorizationResult.swift in Sources */,
-				1DB95ADCB0E13AD2017EA06B773F5CAB /* Channel.swift in Sources */,
-				F230157CEBA7F8FD95C6A5908E2D1387 /* GetChannelHistoryCommand.swift in Sources */,
-				225D38F19B7224083451382916148D80 /* GetChannelHistoryCommandHandler.swift in Sources */,
-				4E0D192008BD90D50568980DD5F12B8A /* GetChannelsCommand.swift in Sources */,
-				F82CB012CD29FC90987ED45CBB924E03 /* GetChannelsCommandHandler.swift in Sources */,
-				A11C93CC7C8057A07466356522799875 /* GetRoomIdCommand.swift in Sources */,
-				480A9E21812300E08F3A26E10622C930 /* GetRoomIdCommandHandler.swift in Sources */,
-				0D147EF46F132DC8EA8FCC514D66B1DC /* JoinChannelCommand.swift in Sources */,
-				12F2AAB1C7FBAC2B36AD30443C22C222 /* JoinChannelCommandHandler.swift in Sources */,
-				4B007ACE3C2B040D6A37DA07CA085510 /* LeaveChannelCommand.swift in Sources */,
-				92348C1B9EB02526B39D21D914841CB9 /* LeaveChannelCommandHandler.swift in Sources */,
-				AFE8747513A6BB07ECDEF526415EE5C9 /* LogonCommand.swift in Sources */,
-				30ECA0246F7D6231038EAA9A9490BCA0 /* LogonCommandHandler.swift in Sources */,
-				0182BC01305615CF8F286716103D67C8 /* Message.swift in Sources */,
-				C3DDD932B143292504074061595739BF /* MessageHistoryResult.swift in Sources */,
-				BC81C42C042A6381678F38F848D2176A /* MessageParser.swift in Sources */,
-				0FB6F73CD9DBFB6D55489FF416E1A7D2 /* MessageParserProtocol.swift in Sources */,
-				5B4BD3B0E913A07F3C7918D46199BF14 /* RegisterCommand.swift in Sources */,
-				08DCEF9EBC955586349BF33324DC0815 /* RegisterCommandHandler.swift in Sources */,
-				35159E1DF7D97AA27A0D3576A8BCCF13 /* RocketChatAdapter-dummy.m in Sources */,
-				E61E6891F6FD36089E82A948ACDBC5C2 /* RocketChatAdapter.swift in Sources */,
-				C3570C574FD7361108E6E1482228846B /* RocketChatAdapterProtocol.swift in Sources */,
-				CBAFD57F206D28115C9E7EF8C444362A /* SendMessageCommand.swift in Sources */,
-				7B4FB637A9299E5A8518F755B6944BFA /* SendMessageCommandHandler.swift in Sources */,
-				CFC2737FBC8C7D73D58E889C434CF021 /* SetUserStatusCommand.swift in Sources */,
-				C6D26C34B4155F502403DF3196D6AACD /* SetUserStatusCommandHandler.swift in Sources */,
-				23306786F5F3D941B2A37877A1F1F6A2 /* User.swift in Sources */,
-				CD5383526B11E789E61CF779EB483004 /* Visitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
